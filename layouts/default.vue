@@ -1,55 +1,59 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="app">
+    <nav id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">Sobre nos</router-link> |
+      <router-link to="/subscribe">Assinar</router-link>
+    </nav>
+
+    <main class="main">
+      <nuxt/>
+    </main>
+
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+<style lang="scss">
+@import 'normalize-scss';
+@include normalize();
+$dark-green: #19341A;
+$medium-green: #50A54C;
+$light-green: #B7D433;
+$orange: #EFB81D;
+html, body {
+  height: 100%;
   margin: 0;
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $dark-green;
+  display: flex;
+  height: 100%;
+  flex-flow: column;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+#nav {
+  padding: 7pt;
+  background-color: transparentize($dark-green, 0.85);
+  a {
+    font-weight: bold;
+    color: white;
+    &.router-link-exact-active {
+      color: $orange;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.main {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
 }
 </style>
