@@ -21,6 +21,7 @@
 <style lang="scss">
 @import 'normalize-scss';
 @include normalize();
+
 $dark-green: #19341A;
 $medium-green: #50A54C;
 $light-green: #B7D433;
@@ -36,7 +37,7 @@ html, body {
   text-align: center;
   color: $dark-green;
   display: flex;
-  height: 100%;
+  min-height: 100vh;
   flex-flow: column;
 }
 #nav {
@@ -45,7 +46,7 @@ html, body {
   a {
     font-weight: bold;
     color: white;
-    &.router-link-exact-active {
+    &.nuxt-link-exact-active {
       color: $orange;
       text-decoration: none;
     }
