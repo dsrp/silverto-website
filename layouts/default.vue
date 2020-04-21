@@ -1,15 +1,20 @@
 <template>
   <div id="app">
     <nav id="nav">
-      <nuxt-link to="/">Home</nuxt-link> |
-      <nuxt-link to="/about">Sobre nos</nuxt-link> |
-      <nuxt-link to="/subscribe">Assinar</nuxt-link>
+      <nuxt-link to="/">
+        Home
+      </nuxt-link> |
+      <nuxt-link to="/about">
+        Sobre nos
+      </nuxt-link> |
+      <nuxt-link to="/subscribe">
+        Assinar
+      </nuxt-link>
     </nav>
 
     <main class="main">
-      <nuxt/>
+      <nuxt />
     </main>
-
   </div>
 </template>
 

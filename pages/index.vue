@@ -9,8 +9,9 @@
       preload="auto"
       class="background-video video-js"
       crossorigin="anonymous"
-      poster="@/assets/video-poster.jpg">
-        <source src="/background-video/playlist.m3u8" type="application/x-mpegURL" />
+      poster="@/assets/video-poster.jpg"
+    >
+      <source src="/background-video/playlist.m3u8" type="application/x-mpegURL">
     </video>
 
     <header class="header">
@@ -18,48 +19,51 @@
       <p>Fomentar uma comunidade de árvores e de pessoas em <a target="_blank" href="https://www.openstreetmap.org/way/690493715">Silverto, Rubiães, Paredes de Coura</a>.</p>
       <div>
         <router-link to="about">
-          <button class="secondary-button">Conhecer mais</button>
+          <button class="secondary-button">
+            Conhecer mais
+          </button>
         </router-link>
         <router-link to="subscribe">
-          <button class="primary-button">Já inscrever-me</button>
+          <button class="primary-button">
+            Já inscrever-me
+          </button>
         </router-link>
       </div>
     </header>
 
     <footer class="footer">
-      <p>Um projeto do<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/solnascente-logo.svg"/></a></p>
+      <p>Um projeto do<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/solnascente-logo.svg"></a></p>
     </footer>
-
   </div>
 </template>
 
 <script>
-import videojs from 'video.js/dist/alt/video.novtt';
-import 'video.js/dist/video-js.css';
+import videojs from 'video.js/dist/alt/video.novtt'
+import 'video.js/dist/video-js.css'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
   },
-  data() {
+  data () {
     return {
       player: null,
       options: {
-        autoplay: 'muted',
-      },
-    };
-  },
-  mounted() {
-    this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady() {
-      console.log('onPlayerReady', this);
-    });
-  },
-  beforeDestroy() {
-    if (this.player) {
-      this.player.dispose();
+        autoplay: 'muted'
+      }
     }
   },
-};
+  mounted () {
+    this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady () {
+      console.log('onPlayerReady', this)
+    })
+  },
+  beforeDestroy () {
+    if (this.player) {
+      this.player.dispose()
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -85,7 +89,6 @@ button {
   &.secondary-button {
     background-color: $dark-green;
     color: $white;
-
 
     &:hover {
       background-color: lighten($dark-green, 10%);
