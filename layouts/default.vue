@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <nav id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Sobre nos</router-link> |
-      <router-link to="/subscribe">Assinar</router-link>
+      <nuxt-link to="/">Home</nuxt-link> |
+      <nuxt-link to="/about">Sobre nos</nuxt-link> |
+      <nuxt-link to="/subscribe">Assinar</nuxt-link>
     </nav>
 
     <main class="main">
