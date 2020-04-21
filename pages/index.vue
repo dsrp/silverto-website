@@ -1,72 +1,177 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        silverto-website
-      </h1>
-      <h2 class="subtitle">
-        Website for Ecoaldeia Silverto, CRL.
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="landing">
+    <video
+      ref="videoPlayer"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      class="background-video video-js"
+      crossorigin="anonymous"
+      poster="@/assets/video-poster.jpg">
+        <source src="/background-video/playlist.m3u8" type="application/x-mpegURL" />
+    </video>
+
+    <header class="header">
+      <h1>Ecoaldeia Silverto</h1>
+      <p>Fomentar uma comunidade de árvores e de pessoas em <a target="_blank" href="https://www.openstreetmap.org/way/690493715">Silverto, Rubiães, Paredes de Coura</a>.</p>
+      <div>
+        <router-link to="about">
+          <button class="secondary-button">Conhecer mais</button>
+        </router-link>
+        <router-link to="subscribe">
+          <button class="primary-button">Já inscrever-me</button>
+        </router-link>
       </div>
-    </div>
+    </header>
+
+    <footer class="footer">
+      <p>Um projeto do<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/solnascente-logo.svg"/></a></p>
+    </footer>
+
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import videojs from 'video.js/dist/alt/video.novtt';
+import 'video.js/dist/video-js.css';
 
 export default {
+  name: 'home',
   components: {
-    Logo
-  }
-}
+  },
+  data() {
+    return {
+      player: null,
+      options: {
+        autoplay: 'muted',
+      },
+    };
+  },
+  mounted() {
+    this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady() {
+      console.log('onPlayerReady', this);
+    });
+  },
+  beforeDestroy() {
+    if (this.player) {
+      this.player.dispose();
+    }
+  },
+};
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style lang="scss" scoped>
+$dark-green: #19341A;
+$medium-green: #50A54C;
+$light-green: #B7D433;
+$orange: #EFB81D;
+$white: #FFFFFF;
+$grey: #EFEFF0;
+
+button {
+  color: white;
+  border-radius: 24pt;
+  border: none;
+  padding: 1ex 1em 1ex 1em;
+  margin: 0.5em 0.5em;
+  font-size: 80%;
+  font-weight: lighter;
+  transition: background-color 0.2s ease-out;
+
+  cursor: pointer;
+
+  &.secondary-button {
+    background-color: $dark-green;
+    color: $white;
+
+
+    &:hover {
+      background-color: lighten($dark-green, 10%);
+    }
+  }
+
+  &.primary-button {
+    background-color: $medium-green;
+    color: $grey;
+
+    &:hover {
+      background-color: lighten($medium-green, 10%);
+    }
+
+  }
+}
+
+.landing {
   display: flex;
-  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  color: white;
   align-items: center;
-  text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+a, a:active, a:hover, a:visited {
+  color: #EFB81D;
+  text-decoration: none;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+a:active, a:hover {
+  color: $light-green;
 }
 
-.links {
-  padding-top: 15px;
+.logo {
+    min-width: 60vw;
+    max-width: 80vw;
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    font-size: 200%;
+    max-width: 60vw;
+
+  }
+
+  .logo {
+    height: 72pt;
+  }
+}
+
+.header {
+  flex: 1;
+
+  > p {
+    background-color: rgba(black, 0.3);
+    border-radius: 24pt;
+    padding: 1em;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > * {
+    margin: 0.2em;
+  }
+}
+
+.background-video, .background-video > video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  overflow: hidden;
+  z-index: -1;
+  background-color: #50A54C;
 }
 </style>
