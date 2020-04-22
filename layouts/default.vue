@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header class="header">
-      <Navigation />
+      <Navigation :class="{ 'bg-transparent': transparentNav }" />
     </header>
 
     <main class="main">
@@ -16,6 +16,11 @@ import Navigation from '@/components/Navigation.vue'
 export default {
   components: {
     Navigation
+  },
+  computed: {
+    transparentNav () {
+      return this.$nuxt.$route.name.startsWith('index__')
+    }
   }
 }
 </script>

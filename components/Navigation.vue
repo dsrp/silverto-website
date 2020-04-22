@@ -43,13 +43,20 @@ pt:
 <style lang="scss" scoped>
 @import '~assets/scss/colors.scss';
 
+div.bg-transparent {
+  background-color: transparentize($dark-green, 0.65);
+
+}
+
 .navigation {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
 
   padding: 7pt;
-  background-color: transparentize($dark-green, 0.85);
+
+  background-color: $medium-green;
+
   a {
     font-weight: bold;
     color: white;
