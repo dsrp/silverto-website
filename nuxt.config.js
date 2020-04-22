@@ -63,6 +63,12 @@ export default {
         ],
         baseUrl: 'https://silverto.pt',
         seo: true,
+        defaultLocale: 'en',
+        strategy: 'prefix',
+        detectBrowserLanguage: {
+          useCookie: true,
+          alwaysRedirect: true
+        },
         vueI18n: {
           fallbackLocale: 'en',
           messages: {
