@@ -15,12 +15,12 @@ export default {
       { hid: 'description', name: 'description', content: 'Fomentar uma comunidade de árvores e de pessoas em Silverto, Rubiães, Paredes de Coura.' }
     ],
     link: [
-      { rel: 'apple-touch-icon', sizes: '180x180', href: 'apple-touch-icon.png?v=eEGmmAAQq3' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'favicon-32x32.png?v=eEGmmAAQq3' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'favicon-16x16.png?v=eEGmmAAQq3' },
-      { rel: 'manifest', href: 'site.webmanifest?v=eEGmmAAQq3' },
-      { rel: 'mask-icon', href: 'safari-pinned-tab.svg?v=eEGmmAAQq3" color="#50a64c' },
-      { rel: 'shortcut icon', href: 'favicon.ico?v=eEGmmAAQq3' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=eEGmmAAQq3' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png?v=eEGmmAAQq3' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png?v=eEGmmAAQq3' },
+      { rel: 'manifest', href: '/site.webmanifest?v=eEGmmAAQq3' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg?v=eEGmmAAQq3" color="#50a64c' },
+      { rel: 'shortcut icon', href: '/favicon.ico?v=eEGmmAAQq3' }
     ]
   },
   /*
