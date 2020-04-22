@@ -58,6 +58,7 @@ export default {
           useCookie: true,
           alwaysRedirect: true
         },
+        vueI18nLoader: true,
         vueI18n: {
           fallbackLocale: 'en',
           messages: {
