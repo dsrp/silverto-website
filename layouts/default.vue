@@ -16,7 +16,7 @@
         :to="switchLocalePath('en')"
       >
         English
-      </nuxt-link> |
+      </nuxt-link>
       <nuxt-link
         v-if="$i18n.locale !== 'pt'"
         :to="switchLocalePath('pt')"
