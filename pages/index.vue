@@ -32,7 +32,7 @@
     </header>
 
     <footer class="footer">
-      <p>Um projeto do<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/solnascente-logo.svg"></a></p>
+      <p>Um projeto do<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/img/logos/solnascente-logo.svg"></a></p>
     </footer>
   </div>
 </template>

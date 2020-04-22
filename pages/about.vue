@@ -42,10 +42,10 @@
 
     <h3>Parceiros</h3>
     <ul class="inline">
-      <li><a href="https://solnascente.eu/"><img alt="Sol Nascente" src="@/assets/solnascente-logo-light-small.svg"></a></li>
-      <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/movingcause-logo.png"></a></li>
-      <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/reflorestar-logo.png"></a></li>
-      <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/dsrp-logo.png"></a></li>
+      <li><a href="https://solnascente.eu/"><img alt="Sol Nascente" src="@/assets/img/logos/solnascente-logo-light-small.svg"></a></li>
+      <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a></li>
+      <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/img/logos/reflorestar-logo.png"></a></li>
+      <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
     </ul>
 
     <h3>Fale conosco</h3>
