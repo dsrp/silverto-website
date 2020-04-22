@@ -52,6 +52,12 @@ export default {
       'nuxt-i18n',
       {
         locales: ['en', 'pt'],
+        defaultLocale: 'en',
+        strategy: 'prefix',
+        detectBrowserLanguage: {
+          useCookie: true,
+          alwaysRedirect: true
+        },
         vueI18n: {
           fallbackLocale: 'en',
           messages: {
