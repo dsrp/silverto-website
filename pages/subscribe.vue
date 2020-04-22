@@ -11,26 +11,26 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <h2>Inscrever a nossa newsletter</h2>
-        <p>Receba notícias sobre Silverto e Sol Nascente no maximo cadas duas semanas.</p>
+        <h2>{{ $t('title') }}</h2>
+        <p>{{ $t('synopsis') }}</p>
         <div class="indicates-required">
-          <span class="asterisk">*</span> indicates required
+          <span class="asterisk">*</span> {{ $t('required') }}
         </div>
         <div class="mc-field-group">
-          <label for="mce-EMAIL">Email<span class="asterisk">*</span>
+          <label for="mce-EMAIL">{{ $t('email') }}<span class="asterisk">*</span>
           </label>
           <input id="mce-EMAIL" type="email" value="" name="EMAIL" class="required email">
         </div>
         <div class="mc-field-group">
-          <label for="mce-FNAME">Nome</label>
+          <label for="mce-FNAME">{{ $t('first_name') }}</label>
           <input id="mce-FNAME" type="text" value="" name="FNAME" class="">
         </div>
         <div class="mc-field-group">
-          <label for="mce-LNAME">Apelido</label>
+          <label for="mce-LNAME">{{ $t('last_name') }}</label>
           <input id="mce-LNAME" type="text" value="" name="LNAME" class="">
         </div>
         <p>
-          <a href="https://us20.campaign-archive.com/home/?u=4951e3c30865c87767a6a4b0d&id=807bea2a36" title="View previous campaigns">Ver notícias anteriores.</a>
+          <a href="https://us20.campaign-archive.com/home/?u=4951e3c30865c87767a6a4b0d&id=807bea2a36" title="View previous campaigns">{{ $t('view_archive') }}</a>
         </p>
         <div id="mce-responses" class="clear">
           <div id="mce-error-response" class="response" style="display:none" />
@@ -45,7 +45,7 @@
           <input type="text" name="b_4951e3c30865c87767a6a4b0d_807bea2a36" tabindex="-1" value="">
         </div>
         <div class="clear">
-          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+          <input id="mc-embedded-subscribe" type="submit" :value="$t('subscribe')" name="subscribe" class="button">
         </div>
       </div>
     </form>
@@ -56,6 +56,28 @@
 
 <script>
 </script>
+
+<i18n lang="yaml">
+en:
+  title: Subscribe to our newsletter
+  synopsis: Receive updates about Silverto and Sol Nascente at most once every two weeks.
+  required: required fields
+  email: Email
+  first_name: First name
+  last_name: Last name
+  view_archive: View previous newsletters
+  subscribe: Subscribe
+
+pt:
+  title: Inscrever a nossa newsletter
+  synopsis: Receba notícias sobre Silverto e Sol Nascente no maximo cadas duas semanas.
+  required: campos obrigatórios
+  email: Email
+  first_name: Nome
+  last_name: Apelido
+  view_archive: Ver notícias anteriores.
+  subscribe: Inscrever-me
+</i18n>
 
 <style  lang="scss" scoped>
 @import '~assets/scss/mailchimp.css';
