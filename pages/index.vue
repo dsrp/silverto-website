@@ -55,8 +55,8 @@ pt:
 </i18n>
 
 <script>
-import videojs from 'video.js/dist/alt/video.novtt'
 import 'video.js/dist/video-js.css'
+const VideojsPromise = import('video.js')
 
 export default {
   name: 'Home',
@@ -71,8 +71,10 @@ export default {
     }
   },
   mounted () {
-    this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady () {
-      console.log('onPlayerReady', this)
+    VideojsPromise.then((module) => {
+      this.player = module.default(this.$refs.videoPlayer, this.options, function onPlayerReady () {
+        console.log('onPlayerReady', this)
+      })
     })
   },
   beforeDestroy () {

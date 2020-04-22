@@ -91,6 +91,9 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    analyze: {
+      analyzerMode: 'static'
+    },
     extend (config, { isClient, loaders: { vue } }) {
       // Extend only webpack config for client-bundle
       if (isClient) {
