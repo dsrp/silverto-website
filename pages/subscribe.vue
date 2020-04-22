@@ -58,7 +58,7 @@
 </script>
 
 <style  lang="scss" scoped>
-@import '~assets/mailchimp.css';
+@import '~assets/scss/mailchimp.css';
 
 .newsletter {
   display: flex;
