@@ -67,15 +67,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$dark-green: #19341A;
-$medium-green: #50A54C;
-$light-green: #B7D433;
-$orange: #EFB81D;
-$white: #FFFFFF;
-$grey: #EFEFF0;
+@import '~assets/scss/colors.scss';
 
 button {
-  color: white;
   border-radius: 24pt;
   border: none;
   padding: 1ex 1em 1ex 1em;
@@ -115,7 +109,7 @@ button {
 }
 
 a, a:active, a:hover, a:visited {
-  color: #EFB81D;
+  color: $orange;
   text-decoration: none;
 }
 
@@ -175,6 +169,6 @@ a:active, a:hover {
 
   overflow: hidden;
   z-index: -1;
-  background-color: #50A54C;
+  background-color: $medium-green;
 }
 </style>
