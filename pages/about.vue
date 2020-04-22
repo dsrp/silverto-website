@@ -56,6 +56,25 @@
 
 <i18n lang="yaml">
 en:
+  title: About us
+  cooperative: Cooperative Ecoaldeia Silverto
+  subtitle: Combining rural co-housing with regenerative agroforestry.
+  synopsis: Living in and with nature, developing local economies and reinvigorating the community. We want to set an example of rural regeneration in the region, demonstrating new practises of land use, revaluing the unique qualities of the countryside.
+  evolution:
+    title: Evolution
+    text: We have acquired a forest property of 1,5 ha, part of which is constructable land. In 2019 we will start the renovation of the existing countryhouse, which will function as a comunual space (co-working, kitchen, guestroom). In addition, we will start the active management of the forest, for it to become comercially viable. By 2022 we aspire to shelter a community of up to 12 people. Together, we wish to (auto-)construct comfortable and affordable houses for up to 5 households, with a low ecological impact.
+  location:
+    title: Location
+    viewlargermap: View larger map
+    address: Address
+  organs:
+    title: Social Organs
+    administrator: Sole Administrator
+    ga: General Assembly
+    fiscal: Sole Auditor
+  partners: Partners
+  talktous: Talk to us
+  happytotalk: We are happy to meet you! Send us an email to start the conversation!
 
 pt:
   title: Sobre nos
