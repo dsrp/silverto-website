@@ -1,35 +1,50 @@
 <template>
   <div id="app">
-    <nav id="nav">
-      <nuxt-link :to="localePath('/')">
-        Home
-      </nuxt-link> |
-      <nuxt-link :to="localePath('/about')">
-        Sobre nos
-      </nuxt-link> |
-      <nuxt-link :to="localePath('/subscribe')">
-        Assinar
-      </nuxt-link>
+    <header class="header">
+      <nav class="menu">
+        <nuxt-link :to="localePath('/')">
+          {{ $t('home') }}
+        </nuxt-link> |
+        <nuxt-link :to="localePath('/about')">
+          {{ $t('about') }}
+        </nuxt-link> |
+        <nuxt-link :to="localePath('/subscribe')">
+          {{ $t('subscribe') }}
+        </nuxt-link>
+      </nav>
 
-      <nuxt-link
-        v-if="$i18n.locale !== 'en'"
-        :to="switchLocalePath('en')"
-      >
-        English
-      </nuxt-link>
-      <nuxt-link
-        v-if="$i18n.locale !== 'pt'"
-        :to="switchLocalePath('pt')"
-      >
-        Português
-      </nuxt-link>
-    </nav>
+      <nav class="lang">
+        <nuxt-link
+          v-if="$i18n.locale !== 'en'"
+          :to="switchLocalePath('en')"
+        >
+          English
+        </nuxt-link>
+        <nuxt-link
+          v-if="$i18n.locale !== 'pt'"
+          :to="switchLocalePath('pt')"
+        >
+          Português
+        </nuxt-link>
+      </nav>
+    </header>
 
     <main class="main">
       <nuxt />
     </main>
   </div>
 </template>
+
+<i18n lang="yaml">
+en:
+  home: Home
+  about: About
+  subscribe: Subscribe
+
+pt:
+  about: Sobre nos
+  subscribe: Inscrever
+</i18n>
 
 <style lang="scss">
 @import 'normalize-scss';
@@ -53,7 +68,21 @@ html, body {
   min-height: 100vh;
   flex-flow: column;
 }
-#nav {
+nav {
+  .lang {
+    align-items: right;
+  }
+}
+
+header.header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .lang {
+    align-self: right;
+  }
+
   padding: 7pt;
   background-color: transparentize($dark-green, 0.85);
   a {

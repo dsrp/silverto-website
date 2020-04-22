@@ -15,28 +15,44 @@
     </video>
 
     <header class="header">
-      <h1>{{ $t('greeting') }}</h1>
-      <h1>Ecoaldeia Silverto</h1>
-      <p>Fomentar uma comunidade de árvores e de pessoas em <a target="_blank" href="https://www.openstreetmap.org/way/690493715">Silverto, Rubiães, Paredes de Coura</a>.</p>
+      <h1>{{ $t('title') }}</h1>
+      <i18n path="description" tag="p">
+        <a target="_blank" href="https://www.openstreetmap.org/way/690493715">Silverto, Rubiães, Paredes de Coura</a>
+      </i18n>
       <div>
         <nuxt-link :to="localePath('about')">
           <button class="secondary-button">
-            Conhecer mais
+            {{ $t('learnmore') }}
           </button>
         </nuxt-link>
         <nuxt-link :to="localePath('subscribe')">
           <button class="primary-button">
-            Já inscrever-me
+            {{ $t('subscribeme') }}
           </button>
         </nuxt-link>
       </div>
     </header>
 
     <footer class="footer">
-      <p>Um projeto do<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/img/logos/solnascente-logo.svg"></a></p>
+      <p>{{ $t('projectof') }}<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/img/logos/solnascente-logo.svg"></a></p>
     </footer>
   </div>
 </template>
+
+<i18n lang="yaml">
+en:
+  title: Ecoaldeia Silverto
+  description: Fostering a community of trees and people in {0}.
+  projectof: A project of
+  learnmore: Learn more
+  subscribeme: Subscribe me
+
+pt:
+  description: Fomentar uma comunidade de árvores e de pessoas em {0}.
+  projectof: Um projeto do
+  learnmore: Conhecer mais
+  subscribeme: Inscrever-me
+</i18n>
 
 <script>
 import videojs from 'video.js/dist/alt/video.novtt'
