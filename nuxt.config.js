@@ -51,7 +51,18 @@ export default {
     [
       'nuxt-i18n',
       {
-        locales: ['en', 'pt'],
+        locales: [
+          {
+            code: 'pt',
+            iso: 'pt-PT'
+          },
+          {
+            code: 'en',
+            iso: 'en-US'
+          }
+        ],
+        baseUrl: 'https://silverto.pt',
+        seo: true,
         vueI18n: {
           fallbackLocale: 'en',
           messages: {
