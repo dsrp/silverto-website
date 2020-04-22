@@ -60,8 +60,6 @@
 <style  lang="scss" scoped>
 @import '~assets/mailchimp.css';
 
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-
 .newsletter {
   display: flex;
   flex-flow: column;
