@@ -10,6 +10,19 @@
       <nuxt-link to="/subscribe">
         Assinar
       </nuxt-link>
+
+      <nuxt-link
+        v-if="$i18n.locale !== 'en'"
+        :to="switchLocalePath('en')"
+      >
+        English
+      </nuxt-link> |
+      <nuxt-link
+        v-if="$i18n.locale !== 'pt'"
+        :to="switchLocalePath('pt')"
+      >
+        Português
+      </nuxt-link>
     </nav>
 
     <main class="main">

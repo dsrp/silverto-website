@@ -15,6 +15,7 @@
     </video>
 
     <header class="header">
+      <h1>{{ $t('greeting') }}</h1>
       <h1>Ecoaldeia Silverto</h1>
       <p>Fomentar uma comunidade de árvores e de pessoas em <a target="_blank" href="https://www.openstreetmap.org/way/690493715">Silverto, Rubiães, Paredes de Coura</a>.</p>
       <div>
