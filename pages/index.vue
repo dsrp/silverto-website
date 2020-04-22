@@ -19,12 +19,12 @@
       <h1>Ecoaldeia Silverto</h1>
       <p>Fomentar uma comunidade de árvores e de pessoas em <a target="_blank" href="https://www.openstreetmap.org/way/690493715">Silverto, Rubiães, Paredes de Coura</a>.</p>
       <div>
-        <nuxt-link to="about">
+        <nuxt-link :to="localePath('about')">
           <button class="secondary-button">
             Conhecer mais
           </button>
         </nuxt-link>
-        <nuxt-link to="subscribe">
+        <nuxt-link :to="localePath('subscribe')">
           <button class="primary-button">
             Já inscrever-me
           </button>

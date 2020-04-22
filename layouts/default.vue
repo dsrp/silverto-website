@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <nav id="nav">
-      <nuxt-link to="/">
+      <nuxt-link :to="localePath('/')">
         Home
       </nuxt-link> |
-      <nuxt-link to="/about">
+      <nuxt-link :to="localePath('/about')">
         Sobre nos
       </nuxt-link> |
-      <nuxt-link to="/subscribe">
+      <nuxt-link :to="localePath('/subscribe')">
         Assinar
       </nuxt-link>
 
