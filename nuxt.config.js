@@ -8,7 +8,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Fomentar uma comunidade de árvores e de pessoas em Silverto, Rubiães, Paredes de Coura.' }
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=eEGmmAAQq3' },

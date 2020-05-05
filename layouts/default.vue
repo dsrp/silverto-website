@@ -21,9 +21,42 @@ export default {
     transparentNav () {
       return this.$nuxt.$route.name.startsWith('index__')
     }
+  },
+  head () {
+    const i18nSeo = this.$nuxtI18nSeo()
+
+    return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs
+      },
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('description'),
+          ...i18nSeo.meta
+        }
+      ],
+      link: [
+        {
+          hid: 'apple-touch-icon',
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/apple-touch-icon.png',
+          ...i18nSeo.link
+        }
+      ]
+    }
   }
 }
 </script>
+
+<i18n lang="yaml">
+en:
+  description: Fostering a community of trees and people in Silverto, Paredes de Coura, Northern Portugal.
+pt:
+  description: Fomentar uma comunidade de árvores e de pessoas em Silverto, Rubiães, Paredes de Coura.
+</i18n>
 
 <style lang="scss">
 @import 'normalize-scss';
