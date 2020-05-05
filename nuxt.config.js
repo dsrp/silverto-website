@@ -5,9 +5,6 @@ export default {
   */
   head: {
     title: 'Ecoaldeia Silverto',
-    htmlAttrs: {
-      lang: 'pt'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,7 +22,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#50A54C' },
   /*
   ** Global CSS
   */
@@ -65,20 +62,11 @@ export default {
         defaultLocale: 'en',
         strategy: 'prefix',
         detectBrowserLanguage: {
-          useCookie: true,
-          alwaysRedirect: true
+          useCookie: true
         },
         vueI18nLoader: true,
         vueI18n: {
-          fallbackLocale: 'en',
-          messages: {
-            en: {
-              greeting: 'Hello world!'
-            },
-            pt: {
-              greeting: '¡Hola mundo!'
-            }
-          }
+          fallbackLocale: 'en'
         }
       }
     ]
