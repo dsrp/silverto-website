@@ -23,28 +23,27 @@ export default {
     }
   },
   head () {
-    const i18nSeo = this.$nuxtI18nSeo()
+    const baseUrl = 'https://silverto.pt'
+    const canonical = `${baseUrl}${this.$route.path}`
 
     return {
-      htmlAttrs: {
-        ...i18nSeo.htmlAttrs
-      },
+      title: this.$t('title'),
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.$t('description'),
-          ...i18nSeo.meta
-        }
-      ],
-      link: [
-        {
-          hid: 'apple-touch-icon',
-          rel: 'apple-touch-icon',
-          sizes: '180x180',
-          href: '/apple-touch-icon.png',
-          ...i18nSeo.link
-        }
+        { hid: 'description', name: 'description', content: this.$t('description') },
+        // Facebook OG
+        { hid: 'og:title', name: 'og:title', content: this.$t('title') },
+        { hid: 'og:type', name: 'og:type', content: 'website' },
+        { hid: 'og:url', name: 'og:url', content: canonical },
+        { hid: 'og:description', name: 'og:description', content: this.$t('description') },
+        { hid: 'og:image', name: 'og:image', content: `${baseUrl}/background-video/poster.jpg` },
+        { hid: 'og:site_name', name: 'og:site_name', content: 'Ecoaldeia Silverto' },
+        // Twitter card
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@solnascente_eu' },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('title') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('description') },
+        { hid: 'twitter:image', name: 'twitter:image', content: `${baseUrl}/background-video/poster.jpg` },
+        { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: this.$t('title') }
       ]
     }
   }
@@ -54,8 +53,10 @@ export default {
 <i18n lang="yaml">
 en:
   description: Fostering a community of trees and people in Silverto, Paredes de Coura, Northern Portugal.
+  title: Ecoaldeia Silverto
 pt:
   description: Fomentar uma comunidade de árvores e de pessoas em Silverto, Rubiães, Paredes de Coura.
+  title: Ecoaldeia Silverto
 </i18n>
 
 <style lang="scss">

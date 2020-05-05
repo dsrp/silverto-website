@@ -57,7 +57,7 @@ export default {
           }
         ],
         baseUrl: 'https://silverto.pt',
-        seo: true,
+        seo: false,
         defaultLocale: 'en',
         strategy: 'prefix',
         detectBrowserLanguage: {
