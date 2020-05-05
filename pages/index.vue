@@ -9,7 +9,7 @@
       preload="auto"
       class="background-video video-js"
       crossorigin="anonymous"
-      poster="@/assets/img/video-poster.jpg"
+      poster="/background-video/poster.jpg"
     >
       <source src="/background-video/playlist.m3u8" type="application/x-mpegURL">
     </video>
