@@ -20,8 +20,8 @@
     <h3>{{ $t('location.address') }}</h3>
     <address>
       Caminho de Moreira nº240<br>
-      Silverto, Rubiães<br>
-      4940-692 Paredes de Coura<br>
+      Lugar do Silverto<br>
+      4940-692 Rubiães, Paredes de Coura<br>
       Portugal
     </address>
     <h3>{{ $t('organs.title') }}</h3>
@@ -36,7 +36,7 @@
       </li>
       <li>
         <h4>{{ $t('organs.fiscal') }}</h4>
-        Diego Reimondez
+        Zuzana Teresa Majer
       </li>
     </ul>
 
@@ -50,7 +50,12 @@
 
     <h3>{{ $t('talktous') }}</h3>
     <p>{{ $t('happytotalk') }}</p>
-    <p><a href="mailto:info@silverto.pt">info@silverto.pt</a></p>
+    <ul class="inline">
+      <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
+      <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
+      <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
+      <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
+    </ul>
   </div>
 </template>
 
@@ -62,7 +67,7 @@ en:
   synopsis: Living in and with nature, developing local economies and reinvigorating the community. We want to set an example of rural regeneration in the region, demonstrating new practises of land use, revaluing the unique qualities of the countryside.
   evolution:
     title: Evolution
-    text: We have acquired a forest property of 1,5 ha, part of which is constructable land. In 2019 we will start the renovation of the existing countryhouse, which will function as a comunual space (co-working, kitchen, guestroom). In addition, we will start the active management of the forest, for it to become comercially viable. By 2022 we aspire to shelter a community of up to 12 people. Together, we wish to (auto-)construct comfortable and affordable houses for up to 5 households, with a low ecological impact.
+    text: We have acquired a forest property of 1,5 ha, part of which is constructable land. In 2019 we started the renovation of the existing countryhouse, which will function as a comunual space (co-working, kitchen, guestroom). In addition, we will start the active management of the forest, for it to become comercially viable. By 2022 we aspire to shelter a community of up to 12 people. Together, we wish to (auto-)construct comfortable and affordable houses for up to 5 households, with a low ecological impact.
   location:
     title: Location
     viewlargermap: View larger map
@@ -74,7 +79,7 @@ en:
     fiscal: Sole Auditor
   partners: Partners
   talktous: Talk to us
-  happytotalk: We are happy to meet you! Send us an email to start the conversation!
+  happytotalk: We are happy to meet you! Send us an email or join our chat to start the conversation!
 
 pt:
   title: Sobre nos
@@ -83,7 +88,7 @@ pt:
   synopsis: Conviver em e com a natureza, desenvolver a economia rural, revigorar a comunidade. Pretendemos fazer um exemplo de regeneração rural do região, mostrar novas práticas de uso da terra, revalorizar as qualidades únicas do campo.
   evolution:
     title: Evolução
-    text: Atualmente estamos comprando um campo de 1,5 ha de floresta com direitos de construção. Em 2019 esperamos renovar a casa existente, que terá uma função comum (co-working, cozinha, alojamento). Também iniciaremos a gestão ativa da floresta no campo, para torná-la comercialmente viável. Até 2022, queremos abrigar uma comunidade de até cinco domicílios, fazendo auto-construção de casas confortáveis e económicas, com baixo impacto ecológico. Estamos visando um máximo total de 12 pessoas.
+    text: Adquirimos uma propriedade rural de 1,5 ha, parte da qual é terreno para construção. Em 2019 já começámos a renovação da casa de campo existente, que funcionará como espaço comunitário (co-trabalho, cozinha, quarto de hóspedes). Além disso, iniciaremos a gestão activa da floresta, para que esta se torne comercialmente viável. Até 2022 aspiramos a abrigar uma comunidade de até 12 pessoas. Juntos, desejamos construir (auto-)casas confortáveis e acessíveis para um máximo de 5 casas, com um baixo impacto ecológico.
   location:
     title: Onde estamos
     viewlargermap: Visualizar Mapa em Tamanho Maior
@@ -95,7 +100,7 @@ pt:
     fiscal: Fiscal Único
   partners: Parceiros
   talktous: Fale conosco
-  happytotalk: Estamos felizes de te-encontrar! Mande-nos um email para iniciar a conversa!
+  happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
 </i18n>
 
 <style lang="scss" scoped>
