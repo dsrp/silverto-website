@@ -68,6 +68,12 @@ export default {
           fallbackLocale: 'en'
         }
       }
+    ],
+    [
+      '@nuxtjs/sitemap',
+      {
+        hostname: 'https://silverto.pt'
+      }
     ]
   ],
   /*
