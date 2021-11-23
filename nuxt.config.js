@@ -1,5 +1,8 @@
 
 export default {
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+
   /*
   ** Headers of the page
   */
@@ -83,9 +86,9 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    analyze: {
-      analyzerMode: 'static'
-    },
+    // analyze: {
+    //   analyzerMode: 'static'
+    // },
     extend (config, { isClient, loaders: { vue } }) {
       // Extend only webpack config for client-bundle
       if (isClient) {
