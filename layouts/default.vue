@@ -17,11 +17,6 @@ export default {
   components: {
     Navigation
   },
-  computed: {
-    transparentNav () {
-      return this.$nuxt.$route.name.startsWith('index__')
-    }
-  },
   head () {
     const baseUrl = 'https://silverto.pt'
     const canonical = `${baseUrl}${this.$route.path}`
@@ -45,6 +40,11 @@ export default {
         { hid: 'twitter:image', name: 'twitter:image', content: `${baseUrl}/background-video/poster.jpg` },
         { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: this.$t('title') }
       ]
+    }
+  },
+  computed: {
+    transparentNav () {
+      return this.$nuxt.$route.name.startsWith('index__')
     }
   }
 }
