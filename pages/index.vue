@@ -73,7 +73,6 @@ export default {
   mounted () {
     VideojsPromise.then((module) => {
       this.player = module.default(this.$refs.videoPlayer, this.options, function onPlayerReady () {
-        console.log('onPlayerReady', this)
       })
     })
   },
