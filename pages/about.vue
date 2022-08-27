@@ -1,17 +1,14 @@
 <template>
   <b-container class="about">
+    <h2 class="mb-4">
+      {{ $t('cooperative') }}
+    </h2>
     <b-row>
-      <b-col>
+      <b-col class="left">
         <h3>{{ $t('subtitle') }}</h3>
         <p>{{ $t('synopsis') }}</p>
-        <h3>{{ $t('evolution.title') }}</h3>
-        <p>{{ $t('evolution.text') }}</p>
       </b-col>
-      <b-col>
-        <h2 class="mb-4">
-          {{ $t('cooperative') }}
-        </h2>
-        <h3>{{ $t('location.title') }}</h3>
+      <b-col class="middle">
         <iframe
           width="425"
           height="350"
@@ -25,7 +22,17 @@
         <b-button block href="https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133" variant="success" size="sm">
           {{ $t('location.viewlargermap') }}
         </b-button>
-        <h3 class="m-5">
+      </b-col>
+      <b-col class="right">
+        <h3>{{ $t('talktous') }}</h3>
+        <p>{{ $t('happytotalk') }}</p>
+        <ul class="inline">
+          <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
+          <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
+          <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
+          <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
+        </ul>
+        <h3 class="mt-4">
           {{ $t('location.address') }}
         </h3>
         <address>
@@ -35,18 +42,14 @@
           Portugal
         </address>
       </b-col>
-      <b-col>
-        <h3>{{ $t('talktous') }}</h3>
-        <p>{{ $t('happytotalk') }}</p>
-        <ul class="inline">
-          <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
-          <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
-          <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
-          <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
-        </ul>
-      </b-col>
     </b-row>
-    <h3>{{ $t('partners') }}</h3>
+    <h3 class="mt-5">
+      {{ $t('evolution.title') }}
+    </h3>
+    <p>{{ $t('evolution.text') }}</p>
+    <h3 class="mt-5">
+      {{ $t('partners') }}
+    </h3>
     <ul class="inline">
       <li><a href="https://solnascente.eu/"><img alt="Sol Nascente" src="@/assets/img/logos/solnascente-logo-light-small.svg"></a></li>
       <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a></li>
@@ -59,7 +62,7 @@
 <i18n lang="yaml">
 en:
   title: About us
-  cooperative: Cooperative Ecoaldeia Silverto
+  cooperative: Ecoaldeia Silverto
   subtitle: Combining rural co-housing with regenerative agroforestry.
   synopsis: Living in and with nature, developing local economies and reinvigorating the community. We want to set an example of rural regeneration in the region, demonstrating new practises of land use, revaluing the unique qualities of the countryside.
   evolution:
@@ -69,18 +72,13 @@ en:
     title: Location
     viewlargermap: View larger map
     address: Address
-  organs:
-    title: Social Organs
-    administrator: Sole Administrator
-    ga: General Assembly
-    fiscal: Sole Auditor
   partners: Partners
   talktous: Talk to us
   happytotalk: We are happy to meet you! Send us an email or join our chat to start the conversation!
 
 pt:
   title: Sobre nos
-  cooperative: Cooperativa Ecoaldeia Silverto
+  cooperative: Ecoaldeia Silverto
   subtitle: Combina co-habitação rural com agroflorestação regenerativa.
   synopsis: Conviver em e com a natureza, desenvolver a economia rural, revigorar a comunidade. Pretendemos fazer um exemplo de regeneração rural do região, mostrar novas práticas de uso da terra, revalorizar as qualidades únicas do campo.
   evolution:
@@ -105,18 +103,17 @@ pt:
 background-color: rgb(239, 244, 235);
 border-radius: 3pt;
 border: 1pt solid #c7d4b7;
-margin-top: 20pt;
-padding: 1em;
-/* > * {
-max-width: 80vw;
+margin: 3em;
+padding: 3em;
+max-width: 68em;
 
-@media only screen and (min-width: 500px) {
-max-width: 40em;
-}
-} */
 h2, h3 {
-text-align: center;
+  text-align: center;
 }
+  .left, .right, .middle {
+   margin-top: 2em;
+  }
+
 address, p {
 text-align: left;
 }
@@ -125,18 +122,19 @@ border-radius: 3pt;
 }
 
 ul.inline {
-@media only screen and (min-width: 500px) {
-max-width: 100em;
-}
-
+//@media only screen and (min-width: 500px) {
+//max-width: 100em;
+//}
+padding: 0px;
 list-style-type: none;
+
 li {
-display: inline;
-padding: 10pt;
+display: inline-block;
+
 img {
 padding-bottom: 6pt;
 height: 80px;
-max-width: 50vw;
+max-width: 55vw;
 }
 
 }
