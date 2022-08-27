@@ -1,45 +1,51 @@
 <template>
-  <div class="about">
-    <h1>{{ $t('title') }}</h1>
-    <h2>{{ $t('cooperative') }}</h2>
-    <h3>{{ $t('subtitle') }}</h3>
-    <p>{{ $t('synopsis') }}</p>
-    <h3>{{ $t('evolution.title') }}</h3>
-    <p>{{ $t('evolution.text') }}</p>
-    <h3>{{ $t('location.title') }}</h3>
-    <iframe
-      width="425"
-      height="350"
-      frameborder="0"
-      scrolling="no"
-      marginheight="0"
-      marginwidth="0"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-9.354858398437502%2C41.47360232634395%2C-7.871704101562501%2C42.32301644617188&amp;layer=mapnik&amp;marker=41.899721690058364%2C-8.61328125"
-      style="border: 1px solid black"
-    /><br><small><a href="https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133">{{ $t('location.viewlargermap') }}</a></small>
-    <h3>{{ $t('location.address') }}</h3>
-    <address>
-      Caminho de Moreira nº240<br>
-      Lugar do Silverto<br>
-      4940-692 Rubiães, Paredes de Coura<br>
-      Portugal
-    </address>
-    <h3>{{ $t('organs.title') }}</h3>
-    <ul class="inline">
-      <li>
-        <h4>{{ $t('organs.administrator') }}</h4>
-        Mathijs de Bruin
-      </li>
-      <li>
-        <h4>{{ $t('organs.ga') }}</h4>
-        Nuno Reis Pereira
-      </li>
-      <li>
-        <h4>{{ $t('organs.fiscal') }}</h4>
-        Zuzana Teresa Majer
-      </li>
-    </ul>
-
+  <b-container class="about">
+    <b-row>
+      <b-col>
+        <h3>{{ $t('subtitle') }}</h3>
+        <p>{{ $t('synopsis') }}</p>
+        <h3>{{ $t('evolution.title') }}</h3>
+        <p>{{ $t('evolution.text') }}</p>
+      </b-col>
+      <b-col>
+        <h2 class="mb-4">
+          {{ $t('cooperative') }}
+        </h2>
+        <h3>{{ $t('location.title') }}</h3>
+        <iframe
+          width="425"
+          height="350"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-9.354858398437502%2C41.47360232634395%2C-7.871704101562501%2C42.32301644617188&amp;layer=mapnik&amp;marker=41.899721690058364%2C-8.61328125"
+          style="border: 1px solid black"
+        /><br>
+        <b-button block href="https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133" variant="success" size="sm">
+          {{ $t('location.viewlargermap') }}
+        </b-button>
+        <h3 class="m-5">
+          {{ $t('location.address') }}
+        </h3>
+        <address>
+          Caminho de Moreira nº240<br>
+          Lugar do Silverto<br>
+          4940-692 Rubiães, Paredes de Coura<br>
+          Portugal
+        </address>
+      </b-col>
+      <b-col>
+        <h3>{{ $t('talktous') }}</h3>
+        <p>{{ $t('happytotalk') }}</p>
+        <ul class="inline">
+          <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
+          <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
+          <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
+          <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
+        </ul>
+      </b-col>
+    </b-row>
     <h3>{{ $t('partners') }}</h3>
     <ul class="inline">
       <li><a href="https://solnascente.eu/"><img alt="Sol Nascente" src="@/assets/img/logos/solnascente-logo-light-small.svg"></a></li>
@@ -47,16 +53,7 @@
       <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/img/logos/reflorestar-logo.png"></a></li>
       <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
     </ul>
-
-    <h3>{{ $t('talktous') }}</h3>
-    <p>{{ $t('happytotalk') }}</p>
-    <ul class="inline">
-      <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
-      <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
-      <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
-      <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
-    </ul>
-  </div>
+  </b-container>
 </template>
 
 <i18n lang="yaml">
@@ -105,46 +102,44 @@ pt:
 
 <style lang="scss" scoped>
 .about {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+background-color: rgb(239, 244, 235);
+border-radius: 3pt;
+border: 1pt solid #c7d4b7;
+margin-top: 20pt;
+padding: 1em;
+/* > * {
+max-width: 80vw;
 
-  > * {
-    max-width: 80vw;
+@media only screen and (min-width: 500px) {
+max-width: 40em;
+}
+} */
+h2, h3 {
+text-align: center;
+}
+address, p {
+text-align: left;
+}
+iframe {
+border-radius: 3pt;
+}
 
-    @media only screen and (min-width: 500px) {
-      max-width: 40em;
-    }
-  }
+ul.inline {
+@media only screen and (min-width: 500px) {
+max-width: 100em;
+}
 
-  padding: 1em;
+list-style-type: none;
+li {
+display: inline;
+padding: 10pt;
+img {
+padding-bottom: 6pt;
+height: 80px;
+max-width: 50vw;
+}
 
-  address, p {
-    text-align: left;
-  }
-
-  ul.inline {
-    @media only screen and (min-width: 500px) {
-      max-width: 100em;
-    }
-
-    list-style-type: none;
-
-    > li {
-      display: inline;
-      padding: 10pt;
-
-      > h4 {
-        display: inline;
-      }
-
-      img {
-        padding-bottom: 6pt;
-        height: 90px;
-        max-width: 60vw;
-      }
-
-    }
-  }
+}
+}
 }
 </style>
