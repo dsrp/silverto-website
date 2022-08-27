@@ -63,11 +63,12 @@
 en:
   title: About us
   cooperative: Ecoaldeia Silverto
-  subtitle: Combining rural co-housing with regenerative agroforestry.
-  synopsis: Living in and with nature, developing local economies and reinvigorating the community. We want to set an example of rural regeneration in the region, demonstrating new practises of land use, revaluing the unique qualities of the countryside.
+  subtitle: A fusion of rural co-housing and regenerative agroforestry.
+  synopsis: Living close to nature with a spirit of modesty and curiosity. Developing a sense of community around to learn and grow together.
+            Helping the land to regenerate by practising more sustainable agriculture and agroforestry, appreciating the unique qualities of the landscape.
   evolution:
     title: Evolution
-    text: We have acquired a forest property of 1,5 ha, part of which is constructable land. In 2019 we started the renovation of the existing countryhouse, which will function as a comunual space (co-working, kitchen, guestroom). In addition, we will start the active management of the forest, for it to become comercially viable. By 2022 we aspire to shelter a community of up to 12 people. Together, we wish to (auto-)construct comfortable and affordable houses for up to 5 households, with a low ecological impact.
+    text: We have acquired a forest property of 1.5 hectares, part of which is construction land. In 2019, we started renovating the existing country house, which will function as a communal space (co-working, kitchen, guest room). In addition, we have started managing the woodland, taking care of its diversity to turn it into a food forest in the future. By 2023, we want to create a small community that cares for the land and each other. Together, we would like to build comfortable and affordable houses with low environmental impact.
   location:
     title: Location
     viewlargermap: View larger map
@@ -88,11 +89,6 @@ pt:
     title: Onde estamos
     viewlargermap: Visualizar Mapa em Tamanho Maior
     address: Morada
-  organs:
-    title: Orgãos Sociais
-    administrator: Administrador Único
-    ga: Assembleia Geral
-    fiscal: Fiscal Único
   partners: Parceiros
   talktous: Fale conosco
   happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
@@ -122,9 +118,10 @@ border-radius: 3pt;
 }
 
 ul.inline {
-//@media only screen and (min-width: 500px) {
-//max-width: 100em;
-//}
+@media only screen and (min-width: 500px) {
+max-width: 100em;
+}
+
 padding: 0px;
 list-style-type: none;
 

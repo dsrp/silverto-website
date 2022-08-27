@@ -52,9 +52,7 @@ div.bg-transparent {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-
   padding: 7pt;
-
   background-color: $medium-green;
 
   a {
