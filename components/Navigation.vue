@@ -60,12 +60,13 @@ div.bg-transparent {
   a {
     font-weight: bold;
     color: white;
+    text-decoration: none;
     &.nuxt-link-exact-active {
       color: $orange;
       text-decoration: none;
     }
     &:hover {
-      text-decoration: none;
+      color: $orange;
     }
   }
 }
