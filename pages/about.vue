@@ -3,6 +3,8 @@
      <nav class="logo">
    <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/ecoaldeia-logo.png" width="250px">
     </nav>
+    <hr />
+    <br />
     <h2 class="mb-4">
       {{ $t('cooperative') }}
     </h2>
@@ -64,9 +66,10 @@
 en:
   title: About us
   cooperative: Ecoaldeia Silverto
-  subtitle: A fusion of rural co-housing and regenerative agroforestry.
+  subtitle: A fusion of rural co-housing and regenerative agroforestry
   synopsis: Living close to nature with a spirit of modesty and curiosity. Developing a sense of community around to learn and grow together.
             Helping the land to regenerate by practising more sustainable agriculture and agroforestry, appreciating the unique qualities of the landscape.
+            Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on goofballs hunt anything that moves sweet beast under the bed  intrigued by the shower swat at dog, make muffins flop over shake treat   intently sniff hand  lick butt all of a sudden go crazy  intently stare at the same spot  rub face on everything inspect anything brought into the house chew ipad power cord ,  rub face on everything shake treat  flop over inspect anything brought into the house give attitude  intently sniff hand   intrigued by the shower behind the couch swat at dog. Give attitude shake treat  attack feet flop over inspect anything brought into the house swat at dog chew ipad power cord  make muffins behind the couch intently stare at the same spot hide when guests come over, hopped up on goofballs  flop over destroy couch sweet beast under the bed hunt anything that moves all of a sudden go crazy lick butt  rub face on everything  intrigued by the shower,  intently sniff hand  hunt anything that moves intently stare at the same spot sweet beast under the bed swat at dog flop over chew ipad power cord  lick butt destroy couch. Hide when guests come over  rub face on everything shake treat  attack feet all of a sudden go crazy lick butt swat at dog make muffins  intently sniff hand  sweet beast under the bed intently stare at the same spot, chew ipad power cord  give attitude  hunt anything that moves flop over behind the couch hopped up on goofballs  intrigued by the shower inspect anything brought into the house. Hunt anything that moves all of a sudden go crazy lick butt make muffins  hide when guests come over flop over  intrigued by the shower, inspect anything brought into the house destroy couch hopped up on goofballs chew ipad power cord  flop over behind the couch  rub face on everything swat at dog, shake treat  intently stare at the same spot  intently sniff hand  give attitude attack feet sweet beast under the bed.
   evolution:
     title: Evolution
     text: We have acquired a forest property of 1.5 hectares, part of which is construction land. In 2019, we started renovating the existing country house, which will function as a communal space (co-working, kitchen, guest room). In addition, we have started managing the woodland, taking care of its diversity to turn it into a food forest in the future. By 2023, we want to create a small community that cares for the land and each other. Together, we would like to build comfortable and affordable houses with low environmental impact.
@@ -97,12 +100,7 @@ pt:
 
 <style lang="scss" scoped>
 .about {
-background-color: rgb(239, 244, 235);
-border-radius: 3pt;
-border: 1pt solid #c7d4b7;
-margin-top: 80px;
 padding: 3em;
-max-width: 68em;
 
 h2, h3 {
   text-align: center;
@@ -110,9 +108,14 @@ h2, h3 {
   .left, .right, .middle {
    margin-top: 2em;
   }
-
+.logo-silverto {
+  width: 100vmin;
+}
 address, p {
 text-align: left;
+}
+p {
+  font-size: 20px;
 }
 iframe {
 border-radius: 3pt;
