@@ -52,10 +52,10 @@ export default {
 
 <i18n lang="yaml">
 en:
-  description: Fostering a community of trees and people in Silverto, Paredes de Coura, Northern Portugal.
+  description: Nurturing a community rooted in the forest | Northern Portugal
   title: Ecoaldeia Silverto
 pt:
-  description: Fomentar uma comunidade de árvores e de pessoas em Silverto, Rubiães, Paredes de Coura.
+  description: Nutrir uma comunidade enraizada na floresta | Norte de Portugal
   title: Ecoaldeia Silverto
 </i18n>
 

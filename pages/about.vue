@@ -1,5 +1,8 @@
 <template>
   <b-container class="about">
+     <nav class="logo">
+   <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/ecoaldeia-logo.png" width="250px">
+    </nav>
     <h2 class="mb-4">
       {{ $t('cooperative') }}
     </h2>
@@ -30,7 +33,6 @@
           <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
           <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
           <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
-          <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
         </ul>
         <h3 class="mt-4">
           {{ $t('location.address') }}
@@ -51,7 +53,6 @@
       {{ $t('partners') }}
     </h3>
     <ul class="inline">
-      <li><a href="https://solnascente.eu/"><img alt="Sol Nascente" src="@/assets/img/logos/solnascente-logo-light-small.svg"></a></li>
       <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a></li>
       <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/img/logos/reflorestar-logo.png"></a></li>
       <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
@@ -99,7 +100,7 @@ pt:
 background-color: rgb(239, 244, 235);
 border-radius: 3pt;
 border: 1pt solid #c7d4b7;
-margin: 3em;
+margin-top: 80px;
 padding: 3em;
 max-width: 68em;
 
