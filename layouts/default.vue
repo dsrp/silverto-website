@@ -17,11 +17,6 @@ export default {
   components: {
     Navigation
   },
-  computed: {
-    transparentNav () {
-      return this.$nuxt.$route.name.startsWith('index__')
-    }
-  },
   head () {
     const baseUrl = 'https://silverto.pt'
     const canonical = `${baseUrl}${this.$route.path}`
@@ -46,16 +41,21 @@ export default {
         { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: this.$t('title') }
       ]
     }
+  },
+  computed: {
+    transparentNav () {
+      return this.$nuxt.$route.name.startsWith('index__')
+    }
   }
 }
 </script>
 
 <i18n lang="yaml">
 en:
-  description: Fostering a community of trees and people in Silverto, Paredes de Coura, Northern Portugal.
+  description: Nurturing a community rooted in the forest | Northern Portugal
   title: Ecoaldeia Silverto
 pt:
-  description: Fomentar uma comunidade de árvores e de pessoas em Silverto, Rubiães, Paredes de Coura.
+  description: Nutrir uma comunidade enraizada na floresta | Norte de Portugal
   title: Ecoaldeia Silverto
 </i18n>
 
@@ -69,6 +69,10 @@ html, body {
   height: 100%;
   margin: 0;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

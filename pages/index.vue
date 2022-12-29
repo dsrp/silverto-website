@@ -34,7 +34,7 @@
     </header>
 
     <footer class="footer">
-      <p>{{ $t('projectof') }}<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/img/logos/solnascente-logo.svg"></a></p>
+
     </footer>
   </div>
 </template>
@@ -42,13 +42,13 @@
 <i18n lang="yaml">
 en:
   title: Ecoaldeia Silverto
-  description: Fostering a community of trees and people in {0}.
+  description: Nurturing a community rooted in the forest | Northern Portugal
   projectof: A project of
   learnmore: Learn more
   subscribeme: Subscribe me
 
 pt:
-  description: Fomentar uma comunidade de árvores e de pessoas em {0}.
+  description: Nutrir uma comunidade enraizada na floresta | Norte de Portugal
   projectof: Um projeto do
   learnmore: Conhecer mais
   subscribeme: Inscrever-me
@@ -73,7 +73,6 @@ export default {
   mounted () {
     VideojsPromise.then((module) => {
       this.player = module.default(this.$refs.videoPlayer, this.options, function onPlayerReady () {
-        console.log('onPlayerReady', this)
       })
     })
   },
