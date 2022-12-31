@@ -1,8 +1,16 @@
 <template>
   <div class="navigation bg-transparent">
     <nav class="logo">
-   <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/nuts.png">
-   <img alt="Ecoaldeia Silverto" class="logo-text" src="@/assets/img/logos/napis-logo.png">
+      <img
+        alt="Ecoaldeia Silverto"
+        class="logo-silverto"
+        src="@/assets/img/logos/nuts.png"
+      />
+      <img
+        alt="Ecoaldeia Silverto"
+        class="logo-text"
+        src="@/assets/img/logos/napis-logo.png"
+      />
     </nav>
     <nav class="menu">
       <nuxt-link :to="localePath('/')">
@@ -20,11 +28,9 @@
         Português
       </nuxt-link>
     </nav>
-    <div class="subscribe">
-      <nuxt-link :to="localePath('/subscribe')">
-        {{ $t("subscribe") }}
-      </nuxt-link>
-    </div>
+    <b-button class="subscribe" href="#">
+      {{ $t("subscribe") }}
+    </b-button>
   </div>
 </template>
 
@@ -46,17 +52,17 @@ div.bg-transparent {
   background-color: transparentize($dark-green, 0.65);
 }
 
-  .logo-silverto {
+.logo-silverto {
   width: 200px;
-  position:relative;
+  position: relative;
   bottom: 50px;
-  }
-  .logo-text {
-      width: 167px;
-    position: relative;
-    bottom: 107px;
-    right: 115px;
-  }
+}
+.logo-text {
+  width: 167px;
+  position: relative;
+  bottom: 107px;
+  right: 115px;
+}
 
 .navigation {
   position: fixed;
@@ -69,18 +75,19 @@ div.bg-transparent {
   .menu {
     padding: 10px;
   }
-  .subscribe {
-    padding: 10px;
+  b-button {
+    padding: 13px;
     border-radius: 30px;
-    background-color: #489534;
-    background-image: linear-gradient(86deg, #489534, #3a620c);
+    background-image: linear-gradient(86deg, #ffffff, #eccec7);
     box-shadow: 0 1px 12px 0 rgb(0 0 0 / 6%);
     transition: background-color 0.2s, color 0.2s;
-  }
-  .subscribe a {
-    color: black;
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     &:hover {
-      color: white;
+      cursor: pointer;
+      background-image: linear-gradient(86deg, #eccec7, #ffffff );
+      transition: background-color 0.2s, color 0.2s;
     }
   }
   a {
@@ -92,11 +99,11 @@ div.bg-transparent {
     color: white;
     text-decoration: none;
     &.nuxt-link-exact-active {
-      color: $medium-green;
+      color: #eccec7;
       text-decoration: none;
     }
     &:hover {
-      color: $medium-green;
+      color: #eccec7;
     }
   }
 }
