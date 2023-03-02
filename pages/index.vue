@@ -33,9 +33,7 @@
       </div>
     </header>
 
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer" />
   </div>
 </template>
 

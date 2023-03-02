@@ -4,13 +4,8 @@
       <img
         alt="Ecoaldeia Silverto"
         class="logo-silverto"
-        src="@/assets/img/logos/nuts.png"
-      />
-      <img
-        alt="Ecoaldeia Silverto"
-        class="logo-text"
-        src="@/assets/img/logos/napis-logo.png"
-      />
+        src="@/assets/img/logos/ecoaldeia_silverto_logo-02.png"
+      >
     </nav>
     <nav class="menu">
       <nuxt-link :to="localePath('/')">
@@ -53,29 +48,24 @@ div.bg-transparent {
 }
 
 .logo-silverto {
-  width: 200px;
+  width: 250px;
   position: relative;
   bottom: 50px;
-}
-.logo-text {
-  width: 167px;
-  position: relative;
-  bottom: 107px;
-  right: 115px;
 }
 
 .navigation {
   position: fixed;
   width: 100%;
   height: 40px;
-  display: flex;
   padding: 20px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
 
   .menu {
     padding: 10px;
   }
   b-button {
+    margin-right: 60px;
     padding: 13px;
     border-radius: 30px;
     background-image: linear-gradient(86deg, #ffffff, #eccec7);

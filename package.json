@@ -2,7 +2,7 @@
   "name": "silverto-website",
   "version": "1.0.0",
   "description": "Website for Ecoaldeia Silverto, CRL.",
-  "author": "Mathijs de Bruin",
+  "author": "Mathijs de Bruin and Oszka",
   "private": true,
   "scripts": {
     "dev": "nuxt",

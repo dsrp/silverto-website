@@ -1,10 +1,10 @@
 <template>
   <b-container class="about">
-     <nav class="logo">
-   <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/ecoaldeia-logo.png" width="250px">
+    <nav class="logo">
+      <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/ecoaldeia-logo.png" width="250px">
     </nav>
-    <hr />
-    <br />
+    <hr>
+    <br>
     <h2 class="mb-4">
       {{ $t('cooperative') }}
     </h2>
@@ -13,6 +13,7 @@
         <h3>{{ $t('subtitle') }}</h3>
         <p>{{ $t('synopsis') }}</p>
       </b-col>
+      <Carousel />
       <b-col class="middle">
         <iframe
           width="425"
@@ -97,7 +98,15 @@ pt:
   talktous: Fale conosco
   happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
 </i18n>
+<script>
+import Carousel from '@/components/Carousel.vue'
 
+export default {
+  components: {
+    Carousel
+  }
+}
+</script>
 <style lang="scss" scoped>
 .about {
 padding: 3em;
