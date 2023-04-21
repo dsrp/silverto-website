@@ -1,17 +1,29 @@
 <template>
   <div class="about">
-    <nav class="logo">
-      <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/ecoaldeia-logo.png" width="250px">
-    </nav>
+    <div class="flex justify-center items-center h-screen">
+      <div class="logo">
+        <img
+          alt="Ecoaldeia Silverto"
+          class="logo-silverto"
+          src="@/assets/img/logos/ecoaldeia-logo.png"
+          width="250px"
+        >
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <h1 class="text-4xl font-bold">
+        Hello world!
+      </h1>
+    </div>
     <hr>
     <br>
     <h2 class="mb-4">
-      {{ $t('cooperative') }}
+      {{ $t("cooperative") }}
     </h2>
     <div class="row">
       <div class="col left">
-        <h3>{{ $t('subtitle') }}</h3>
-        <p>{{ $t('synopsis') }}</p>
+        <h3>{{ $t("subtitle") }}</h3>
+        <p>{{ $t("synopsis") }}</p>
       </div>
       <div class="col middle">
         <iframe
@@ -24,20 +36,24 @@
           src="https://www.openstreetmap.org/export/embed.html?bbox=-9.354858398437502%2C41.47360232634395%2C-7.871704101562501%2C42.32301644617188&amp;layer=mapnik&amp;marker=41.899721690058364%2C-8.61328125"
           style="border: 1px solid black"
         />
-        <button class="primary-button" onclick="window.open('https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133', '_blank')">
-          {{ $t('location.viewlargermap') }}
+        <br>
+        <button
+          class="map-button"
+          onclick="window.open('https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133', '_blank')"
+        >
+          {{ $t("location.viewlargermap") }}
         </button>
       </div>
       <div class="col right">
-        <h3>{{ $t('talktous') }}</h3>
-        <p>{{ $t('happytotalk') }}</p>
+        <h3>{{ $t("talktous") }}</h3>
+        <p>{{ $t("happytotalk") }}</p>
         <ul class="inline">
           <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
           <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
           <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
         </ul>
         <h3 class="mt-4">
-          {{ $t('location.address') }}
+          {{ $t("location.address") }}
         </h3>
         <address>
           Caminho de Moreira nº240<br>
@@ -48,16 +64,37 @@
       </div>
     </div>
     <h3 class="mt-5">
-      {{ $t('evolution.title') }}
+      {{ $t("evolution.title") }}
     </h3>
-    <p>{{ $t('evolution.text') }}</p>
+    <p>{{ $t("evolution.text") }}</p>
     <h3 class="mt-5">
-      {{ $t('partners') }}
+      {{ $t("partners") }}
     </h3>
     <ul class="inline">
-      <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a></li>
-      <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/img/logos/reflorestar-logo.png"></a></li>
-      <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
+      <li>
+        <a
+          href="https://movingcause.org/"
+        ><img
+          alt="Moving Cause"
+          src="@/assets/img/logos/movingcause-logo.png"
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://reflorestar-portugal.com"
+        ><img
+          alt="Reflorestar Portugal"
+          src="@/assets/img/logos/reflorestar-logo.png"
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://dsrp.eu"
+        ><img
+          alt="Decentralised Society Research Project"
+          src="@/assets/img/logos/dsrp-logo.png"
+        ></a>
+      </li>
     </ul>
   </div>
 </template>
@@ -98,83 +135,81 @@ pt:
   happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
 </i18n>
 <script>
-
-export default {
-  components: {
-  }
-}
 </script>
 <style lang="scss" scoped>
 @import "~assets/scss/colors.scss";
+
 .about {
-padding: 3em;
+  padding: 3em;
 
-h2, h3 {
-  text-align: center;
-}
-  .left, .right, .middle {
-   margin-top: 2em;
+  h2,
+  h3 {
+    text-align: center;
   }
-.logo-silverto {
-  width: 100vmin;
-}
-address, p {
-text-align: left;
-}
-p {
-  font-size: 20px;
-}
-iframe {
-border-radius: 3pt;
-}
-button {
-  border-radius: 24pt;
-  border: none;
-  padding: 1ex 1em 1ex 1em;
-  margin: 0.5em 0.5em;
-  font-size: 80%;
-  font-weight: lighter;
-  transition: background-color 0.2s ease-out;
-  cursor: pointer;
-
-  &.secondary-button {
-    background-color: $dark-green;
-    color: $white;
-
-    &:hover {
-      background-color: lighten($dark-green, 10%);
-    }
+  .left,
+  .right,
+  .middle {
+    margin-top: 2em;
   }
+  // .logo-silverto {
+  //   width: 100vmin;
+  // }
 
-  &.primary-button {
-    background-color: $medium-green;
-    color: $grey;
+}
+  address,
+  p {
+    text-align: left;
+  }
+  p {
+    font-size: 20px;
+  }
+  iframe {
+    border-radius: 3pt;
+  }
+  button {
+    border-radius: 24pt;
+    border: none;
+    padding: 1ex 1em 1ex 1em;
+    margin: auto 0;
+    font-size: 80%;
+    font-weight: lighter;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
 
-    &:hover {
-      background-color: lighten($medium-green, 10%);
+    &.map-button {
+      background-color: rgb(169, 150, 150);
+      color: $white;
+
+      &:hover {
+        background-color: darken($brown, 10%);
+      }
     }
 
+    &.primary-button {
+      background-color: $medium-green;
+      color: $grey;
+
+      &:hover {
+        background-color: lighten($medium-green, 10%);
+      }
+    }
   }
-}
+  ul.inline {
+    @media only screen and (min-width: 500px) {
+      max-width: 100em;
+    }
 
-ul.inline {
-@media only screen and (min-width: 500px) {
-max-width: 100em;
-}
+    padding: 0px;
+    list-style-type: none;
 
-padding: 0px;
-list-style-type: none;
+    li {
+      display: inline-block;
 
-li {
-display: inline-block;
-
-img {
-padding-bottom: 6pt;
-height: 80px;
-max-width: 55vw;
-}
-
-}
-}
-}
+      img {
+        padding-bottom: 6pt;
+        height: 80px;
+        max-width: 55vw;
+      }
+    }
+  }
 </style>

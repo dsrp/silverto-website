@@ -10,7 +10,7 @@ export default {
     title: 'Ecoaldeia Silverto',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=eEGmmAAQq5' },
@@ -29,6 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -40,7 +41,8 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss'
   ],
   /*
   ** Nuxt.js modules
@@ -89,6 +91,12 @@ export default {
     // analyze: {
     //   analyzerMode: 'static'
     // },
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {}
+      }
+    },
     extend (config, { isClient, loaders: { vue } }) {
       // Extend only webpack config for client-bundle
       if (isClient) {
