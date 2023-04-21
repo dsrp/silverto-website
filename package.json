@@ -13,8 +13,6 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
-    "bootstrap": "^5.2.0",
-    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.15.1",
     "normalize-scss": "^7.0.1",
     "nuxt": "^2.15.7",

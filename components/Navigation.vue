@@ -23,9 +23,11 @@
         Português
       </nuxt-link>
     </nav>
-    <b-button class="subscribe" href="#">
-      {{ $t("subscribe") }}
-    </b-button>
+    <nuxt-link :to="localePath('subscribe')">
+      <button class="primary-button">
+        {{ $t("subscribe") }}
+      </button>
+    </nuxt-link>
   </div>
 </template>
 
@@ -64,37 +66,35 @@ div.bg-transparent {
   .menu {
     padding: 10px;
   }
-  b-button {
-    margin-right: 60px;
-    padding: 13px;
-    border-radius: 30px;
-    background-image: linear-gradient(86deg, #ffffff, #eccec7);
-    box-shadow: 0 1px 12px 0 rgb(0 0 0 / 6%);
-    transition: background-color 0.2s, color 0.2s;
-    font-family: Rubik, sans-serif;
-    font-size: 12px;
+  .primary-button {
+    border-radius: 24pt;
+    border: none;
+    padding: 2ex 2em 2ex 2em;
+    font-size: 80%;
     font-weight: bold;
+    cursor: pointer;
+
     &:hover {
-      cursor: pointer;
-      background-image: linear-gradient(86deg, #eccec7, #ffffff );
-      transition: background-color 0.2s, color 0.2s;
+      background-color: lighten($brown, 5%);
+      transition: background-color 0.2s ease-in;
     }
   }
-  a {
-    font-family: Rubik, sans-serif;
-    font-size: 14px;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
+}
+a {
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  &.nuxt-link-exact-active {
+    color: #eccec7;
     text-decoration: none;
-    &.nuxt-link-exact-active {
-      color: #eccec7;
-      text-decoration: none;
-    }
-    &:hover {
-      color: #eccec7;
-    }
+  }
+  &:hover {
+    color: #eccec7;
   }
 }
 </style>

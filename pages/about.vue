@@ -1,5 +1,5 @@
 <template>
-  <b-container class="about">
+  <div class="about">
     <nav class="logo">
       <img alt="Ecoaldeia Silverto" class="logo-silverto" src="@/assets/img/logos/ecoaldeia-logo.png" width="250px">
     </nav>
@@ -8,13 +8,12 @@
     <h2 class="mb-4">
       {{ $t('cooperative') }}
     </h2>
-    <b-row>
-      <b-col class="left">
+    <div class="row">
+      <div class="col left">
         <h3>{{ $t('subtitle') }}</h3>
         <p>{{ $t('synopsis') }}</p>
-      </b-col>
-      <Carousel />
-      <b-col class="middle">
+      </div>
+      <div class="col middle">
         <iframe
           width="425"
           height="350"
@@ -24,12 +23,12 @@
           marginwidth="0"
           src="https://www.openstreetmap.org/export/embed.html?bbox=-9.354858398437502%2C41.47360232634395%2C-7.871704101562501%2C42.32301644617188&amp;layer=mapnik&amp;marker=41.899721690058364%2C-8.61328125"
           style="border: 1px solid black"
-        /><br>
-        <b-button block href="https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133" variant="success" size="sm">
+        />
+        <button class="primary-button" onclick="window.open('https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133', '_blank')">
           {{ $t('location.viewlargermap') }}
-        </b-button>
-      </b-col>
-      <b-col class="right">
+        </button>
+      </div>
+      <div class="col right">
         <h3>{{ $t('talktous') }}</h3>
         <p>{{ $t('happytotalk') }}</p>
         <ul class="inline">
@@ -46,8 +45,8 @@
           4940-692 Rubiães, Paredes de Coura<br>
           Portugal
         </address>
-      </b-col>
-    </b-row>
+      </div>
+    </div>
     <h3 class="mt-5">
       {{ $t('evolution.title') }}
     </h3>
@@ -60,7 +59,7 @@
       <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/img/logos/reflorestar-logo.png"></a></li>
       <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
     </ul>
-  </b-container>
+  </div>
 </template>
 
 <i18n lang="yaml">
@@ -99,15 +98,14 @@ pt:
   happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
 </i18n>
 <script>
-import Carousel from '@/components/Carousel.vue'
 
 export default {
   components: {
-    Carousel
   }
 }
 </script>
 <style lang="scss" scoped>
+@import "~assets/scss/colors.scss";
 .about {
 padding: 3em;
 
@@ -128,6 +126,35 @@ p {
 }
 iframe {
 border-radius: 3pt;
+}
+button {
+  border-radius: 24pt;
+  border: none;
+  padding: 1ex 1em 1ex 1em;
+  margin: 0.5em 0.5em;
+  font-size: 80%;
+  font-weight: lighter;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+
+  &.secondary-button {
+    background-color: $dark-green;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($dark-green, 10%);
+    }
+  }
+
+  &.primary-button {
+    background-color: $medium-green;
+    color: $grey;
+
+    &:hover {
+      background-color: lighten($medium-green, 10%);
+    }
+
+  }
 }
 
 ul.inline {
