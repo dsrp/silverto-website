@@ -24,27 +24,10 @@
       4940-692 Rubiães, Paredes de Coura<br>
       Portugal
     </address>
-    <h3>{{ $t('organs.title') }}</h3>
-    <ul class="inline">
-      <li>
-        <h4>{{ $t('organs.administrator') }}</h4>
-        Mathijs de Bruin
-      </li>
-      <li>
-        <h4>{{ $t('organs.ga') }}</h4>
-        Nuno Reis Pereira
-      </li>
-      <li>
-        <h4>{{ $t('organs.fiscal') }}</h4>
-        Zuzana Teresa Majer
-      </li>
-    </ul>
 
     <h3>{{ $t('partners') }}</h3>
     <ul class="inline">
-      <li><a href="https://solnascente.eu/"><img alt="Sol Nascente" src="@/assets/img/logos/solnascente-logo-light-small.svg"></a></li>
       <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a></li>
-      <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal" src="@/assets/img/logos/reflorestar-logo.png"></a></li>
       <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
     </ul>
 
@@ -62,42 +45,32 @@
 <i18n lang="yaml">
 en:
   title: About us
-  cooperative: Cooperative Ecoaldeia Silverto
-  subtitle: Combining rural co-housing with regenerative agroforestry.
-  synopsis: Living in and with nature, developing local economies and reinvigorating the community. We want to set an example of rural regeneration in the region, demonstrating new practises of land use, revaluing the unique qualities of the countryside.
+  cooperative: Ecoaldeia Silverto
+  subtitle: A fusion of rural co-housing and regenerative agroforestry
+  synopsis: Living close to nature with a spirit of modesty and curiosity. Developing a sense of community around to learn and grow together. Helping the land to regenerate by practising more sustainable agriculture and agroforestry, appreciating the unique qualities of the landscape.
   evolution:
     title: Evolution
-    text: We have acquired a forest property of 1,5 ha, part of which is constructable land. In 2019 we started the renovation of the existing countryhouse, which will function as a comunual space (co-working, kitchen, guestroom). In addition, we will start the active management of the forest, for it to become comercially viable. By 2022 we aspire to shelter a community of up to 12 people. Together, we wish to (auto-)construct comfortable and affordable houses for up to 5 households, with a low ecological impact.
+    text: We have acquired a forest property of 1.5 hectares, part of which is construction land. In 2019, we started renovating the existing country house, which will function as a communal space (co-working, kitchen, guest room). In addition, we have started managing the woodland, taking care of its diversity to turn it into a food forest in the future. We aim to create a small community that cares for the land and each other. Together, we would like to build comfortable and affordable houses with low environmental impact.
   location:
     title: Location
     viewlargermap: View larger map
     address: Address
-  organs:
-    title: Social Organs
-    administrator: Sole Administrator
-    ga: General Assembly
-    fiscal: Sole Auditor
   partners: Partners
   talktous: Talk to us
   happytotalk: We are happy to meet you! Send us an email or join our chat to start the conversation!
 
 pt:
   title: Sobre nos
-  cooperative: Cooperativa Ecoaldeia Silverto
+  cooperative: Ecoaldeia Silverto
   subtitle: Combina co-habitação rural com agroflorestação regenerativa.
-  synopsis: Conviver em e com a natureza, desenvolver a economia rural, revigorar a comunidade. Pretendemos fazer um exemplo de regeneração rural do região, mostrar novas práticas de uso da terra, revalorizar as qualidades únicas do campo.
+  synopsis: Viver próximo da natureza com um espírito de modéstia e curiosidade. Desenvolver um sentido de comunidade para aprender e crescer em conjunto. Ajudar a terra a regenerar-se, praticando uma agricultura e uma silvicultura mais sustentáveis, apreciando as qualidades únicas da paisagem.
   evolution:
     title: Evolução
-    text: Adquirimos uma propriedade rural de 1,5 ha, parte da qual é terreno para construção. Em 2019 já começámos a renovação da casa de campo existente, que funcionará como espaço comunitário (co-trabalho, cozinha, quarto de hóspedes). Além disso, iniciaremos a gestão activa da floresta, para que esta se torne comercialmente viável. Até 2022 aspiramos a abrigar uma comunidade de até 12 pessoas. Juntos, desejamos construir (auto-)casas confortáveis e acessíveis para um máximo de 5 casas, com um baixo impacto ecológico.
+    text: Adquirimos uma propriedade florestal de 1,5 hectares, parte da qual é terreno de construção. Em 2019, começámos a renovar a casa de campo existente, que funcionará como um espaço comum (co-working, cozinha, quarto de hóspedes). Além disso, começámos a gerir a floresta, cuidando da sua diversidade para a transformar, no futuro, numa floresta alimentar. Queremos criar uma pequena comunidade que cuide da terra e uns dos outros. Juntos, gostaríamos de construir casas confortáveis e económicas com baixo impacto ambiental.
   location:
     title: Onde estamos
     viewlargermap: Visualizar Mapa em Tamanho Maior
     address: Morada
-  organs:
-    title: Orgãos Sociais
-    administrator: Administrador Único
-    ga: Assembleia Geral
-    fiscal: Fiscal Único
   partners: Parceiros
   talktous: Fale conosco
   happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!

@@ -60,7 +60,7 @@
 <i18n lang="yaml">
 en:
   title: Subscribe to our newsletter
-  synopsis: Receive updates about Silverto and Sol Nascente at most once every two weeks.
+  synopsis: Receive updates about Silverto at most once every two weeks.
   required: required fields
   email: Email
   first_name: First name
@@ -70,7 +70,7 @@ en:
 
 pt:
   title: Inscrever a nossa newsletter
-  synopsis: Receba notícias sobre Silverto e Sol Nascente no maximo cadas duas semanas.
+  synopsis: Receba notícias sobre Silverto no maximo cadas duas semanas.
   required: campos obrigatórios
   email: Email
   first_name: Nome

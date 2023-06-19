@@ -32,24 +32,18 @@
         </nuxt-link>
       </div>
     </header>
-
-    <footer class="footer">
-      <p>{{ $t('projectof') }}<br><a href="https://solnascente.eu/"><img alt="Sol Nascente" class="logo" src="@/assets/img/logos/solnascente-logo.svg"></a></p>
-    </footer>
   </div>
 </template>
 
 <i18n lang="yaml">
 en:
   title: Ecoaldeia Silverto
-  description: Fostering a community of trees and people in {0}.
-  projectof: A project of
+  description: Nurturing a community rooted in the forest | Northern Portugal.
   learnmore: Learn more
   subscribeme: Subscribe me
 
 pt:
-  description: Fomentar uma comunidade de árvores e de pessoas em {0}.
-  projectof: Um projeto do
+  description: Nutrir uma comunidade enraizada na floresta | Norte de Portugal
   learnmore: Conhecer mais
   subscribeme: Inscrever-me
 </i18n>
