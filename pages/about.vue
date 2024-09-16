@@ -36,6 +36,7 @@
     <ul class="inline">
       <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
       <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
+      <li><a href="https://www.linkedin.com/company/silverto/">LinkedIn</a></li>
     </ul>
   </div>
 </template>
