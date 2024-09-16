@@ -35,9 +35,7 @@
     <p>{{ $t('happytotalk') }}</p>
     <ul class="inline">
       <li><a href="mailto:info@silverto.pt">info@silverto.pt</a></li>
-      <li><a href="https://matrix.to/#/#silverto:matrix.org">Matrix</a></li>
       <li><a href="https://t.me/ecoaldeia_silverto">Telegram</a></li>
-      <li><a href="https://www.facebook.com/ecoaldeiasilverto">Facebook</a></li>
     </ul>
   </div>
 </template>

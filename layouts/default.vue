@@ -37,13 +37,6 @@ export default {
         { hid: 'og:description', name: 'og:description', content: this.$t('description') },
         { hid: 'og:image', name: 'og:image', content: `${baseUrl}/background-video/poster.jpg` },
         { hid: 'og:site_name', name: 'og:site_name', content: 'Ecoaldeia Silverto' },
-        // Twitter card
-        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-        { hid: 'twitter:site', name: 'twitter:site', content: '@solnascente_eu' },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('description') },
-        { hid: 'twitter:image', name: 'twitter:image', content: `${baseUrl}/background-video/poster.jpg` },
-        { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: this.$t('title') }
       ]
     }
   }
