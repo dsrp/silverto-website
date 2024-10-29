@@ -3,7 +3,7 @@
   <div id="mc_embed_signup" class="newsletter">
     <form
       id="mc-embedded-subscribe-form"
-      action="https://Solnascente.us20.list-manage.com/subscribe/post?u=4951e3c30865c87767a6a4b0d&amp;id=807bea2a36"
+      action="https://silverto.us14.list-manage.com/subscribe/post"
       method="post"
       name="mc-embedded-subscribe-form"
       class="validate"
@@ -30,7 +30,7 @@
           <input id="mce-LNAME" type="text" value="" name="LNAME" class="">
         </div>
         <p>
-          <a href="https://us20.campaign-archive.com/home/?u=4951e3c30865c87767a6a4b0d&id=807bea2a36" title="View previous campaigns">{{ $t('view_archive') }}</a>
+          <a href="https://us14.campaign-archive.com/home/?u=813f50e8c705d28b7c49ed6af&id=d268b01349" title="View previous campaigns">{{ $t('view_archive') }}</a>
         </p>
         <div id="mce-responses" class="clear">
           <div id="mce-error-response" class="response" style="display:none" />
