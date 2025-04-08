@@ -1,7 +1,10 @@
 <template>
   <div class="about">
     <h1>{{ $t('title') }}</h1>
-    <p>{{ $t('description') }}</p>
+    <img src="@/assets/img/festa_primavera.jpg"/>
+    <p>
+      {{ $t('description') }}
+    </p>
 
     <!-- Primary CTA - Telegram -->
     <div class="cta-primary">
@@ -129,6 +132,10 @@ pt:
     @media only screen and (min-width: 500px) {
       max-width: 40em;
     }
+  }
+
+ img {
+    max-width: 50vw;
   }
 
   p {
