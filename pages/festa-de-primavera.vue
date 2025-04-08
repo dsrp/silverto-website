@@ -42,14 +42,14 @@ en:
   rsvp:
     title: RSVP & Participation
     text: "To help us prepare, please:"
-    item1: Let us know you're coming by RSVPing in our party document
-    link: https://hackmd.io/@dokkurbob/S13cCiXbR
+    item1: Let us know you're coming by RSVPing in our
+    link: party document
     item2: Indicate if you'd like to perform or lead a workshop
     item3: Reach out if you'd like to help organize or assist with the event
   connect:
     title: Connect with Us
-    text: "Join our Telegram group for party updates and coordination:"
-    telegram: https://t.me/+UlePfHcv94JjMjdi
+    text: "Join our group for party updates and coordination"
+    telegram: on telegram
   closing: We look forward to celebrating spring, our region Minho, and new beginnings with you at Silverto!
 
 pt:
@@ -68,14 +68,14 @@ pt:
   rsvp:
     title: RSVP e Participação
     text: "Para nos ajudar a preparar, por favor:"
-    item1: Informe-nos que vai comparecer respondendo no nosso documento da festa
-    link: https://hackmd.io/@dokkurbob/S13cCiXbR
+    item1: Informe-nos que vai comparecer respondendo no nosso
+    link: documento da festa
     item2: Indique se gostaria de fazer uma apresentação ou liderar um workshop
     item3: Entre em contacto se gostaria de ajudar a organizar ou auxiliar no evento
   connect:
     title: Conecte-se Connosco
-    text: "Junte-se ao nosso grupo do Telegram para atualizações e coordenação da festa:"
-    telegram: https://t.me/+UlePfHcv94JjMjdi
+    text: "Junte-se ao nosso grupo para atualizações e coordenação da festa"
+    telegram: no telegram
   closing: Esperamos celebrar a primavera, a nossa região do Minho e novos começos consigo em Silverto!
 </i18n>
 
@@ -85,7 +85,7 @@ pt:
   flex-flow: column;
   align-items: center;
 
-  > * {
+  >* {
     max-width: 80vw;
 
     @media only screen and (min-width: 500px) {
@@ -101,6 +101,15 @@ pt:
 
   ul {
     text-align: left;
+    padding-left: 2em;
+    margin-top: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+
+    li {
+      margin-bottom: 0.5em;
+      position: relative;
+    }
   }
 }
 </style>
