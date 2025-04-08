@@ -10,7 +10,7 @@
       <nuxt-link :to="localePath('/volunteering')">
         {{ $t('volunteering') }}
       </nuxt-link> |
-      <nuxt-link :to="localePath('/festa-de-primavera')">
+      <nuxt-link :to="localePath('/primavera')">
         {{ $t('primavera') }}
       </nuxt-link> |
       <nuxt-link :to="localePath('/subscribe')">
