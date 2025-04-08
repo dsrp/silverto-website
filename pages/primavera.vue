@@ -1,7 +1,11 @@
 <template>
-  <div class="about">
+  <div class="primavera">
     <h1>{{ $t('title') }}</h1>
-    <img src="@/assets/img/festa_primavera.jpg"/>
+
+    <a class="header" href="https://t.me/+UlePfHcv94JjMjdi">
+      <img :alt="$t('description')" src="@/assets/img/primavera.jpg"></img>
+    </a>
+
     <p>
       {{ $t('description') }}
     </p>
@@ -119,7 +123,7 @@ pt:
 </i18n>
 
 <style lang="scss" scoped>
-.about {
+.primavera {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -134,7 +138,7 @@ pt:
     }
   }
 
- img {
+  a > img {
     max-width: 50vw;
   }
 
