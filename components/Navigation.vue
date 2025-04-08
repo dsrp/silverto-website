@@ -7,6 +7,9 @@
       <nuxt-link :to="localePath('/about')">
         {{ $t('about') }}
       </nuxt-link> |
+      <nuxt-link :to="localePath('/festa-de-primavera')">
+        {{ $t('primavera') }}
+      </nuxt-link> |
       <nuxt-link :to="localePath('/subscribe')">
         {{ $t('subscribe') }}
       </nuxt-link>
@@ -33,10 +36,11 @@
 en:
   home: Home
   about: About
+  primavera: Spring
   subscribe: Subscribe
-
 pt:
   about: Sobre nos
+  primavera: Primavera
   subscribe: Inscrever
 </i18n>
 
