@@ -39,12 +39,12 @@
 en:
   home: Home
   about: About
-  volunteering: Voluntariado
+  volunteering: Volunteering
   primavera: Spring
   subscribe: Subscribe
 pt:
   about: Sobre nos
-  volunteering:
+  volunteering: Voluntariado
   primavera: Primavera
   subscribe: Inscrever
 </i18n>
