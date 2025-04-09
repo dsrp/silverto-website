@@ -1,10 +1,10 @@
 <template>
   <div class="primavera">
-    <h1>{{ $t('title') }}</h1>
-
-    <a class="header" href="https://t.me/+UlePfHcv94JjMjdi">
+    <a class="header full-width" href="https://t.me/+UlePfHcv94JjMjdi">
       <img :alt="$t('description')" src="@/assets/img/primavera.jpg"></img>
     </a>
+
+    <h1>{{ $t('title') }}</h1>
 
     <p>
       {{ $t('description') }}
@@ -129,6 +129,7 @@ pt:
   align-items: center;
   position: relative;
   padding: 1em;
+  padding-top: 0;
 
   > * {
     max-width: 80vw;
@@ -138,10 +139,19 @@ pt:
     }
   }
 
-  a > img {
-    max-width: 50vw;
+  /* Add this to your existing CSS */
+  .header.full-width {
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
   }
 
+  .header.full-width img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
   p {
     text-align: left;
     margin-bottom: 1.2em;
@@ -187,7 +197,6 @@ pt:
   }
 
   .btn {
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.8em 1.5em;
@@ -195,7 +204,7 @@ pt:
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    width: 100%;
+    display: block;
 
     .icon {
       margin-right: 0.5em;
@@ -209,6 +218,10 @@ pt:
   }
 
   .btn-primary {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
     background-color: #25D366; // Telegram green
     color: white;
 
