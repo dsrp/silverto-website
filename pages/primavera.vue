@@ -1,22 +1,22 @@
 <template>
   <div class="primavera">
-    <a class="header full-width" href="https://t.me/+UlePfHcv94JjMjdi">
-    <img
-      :alt="$t('description')"
-      src="@/assets/img/primavera/silverto-1.jpg"
-      srcset="@/assets/img/primavera/silverto-3@0.25x.jpg 960w,
-              @/assets/img/primavera/silverto@0.75x.jpg 2880w,
-              @/assets/img/primavera/silverto-2@0.5x.jpg 1920w,
-              @/assets/img/primavera/silverto-1.jpg 3840w"
-      sizes="(max-width: 960px) 960px,
-             (max-width: 1920px) 1920px,
-             (max-width: 2880px) 2880w,
-             3840px"
-      class="responsive-image"
-    >
+    <a class="header full-width" href="#party-explainer">
+      <img
+        :alt="$t('description')"
+        src="@/assets/img/primavera/silverto-1.jpg"
+        srcset="@/assets/img/primavera/silverto-3@0.25x.jpg 960w,
+                @/assets/img/primavera/silverto@0.75x.jpg 2880w,
+                @/assets/img/primavera/silverto-2@0.5x.jpg 1920w,
+                @/assets/img/primavera/silverto-1.jpg 3840w"
+        sizes="(max-width: 960px) 960px,
+               (max-width: 1920px) 1920px,
+               (max-width: 2880px) 2880w,
+               3840px"
+        class="responsive-image"
+      >
     </a>
 
-    <h1>{{ $t('title') }}</h1>
+    <h1 id="party-explainer">{{ $t('title') }}</h1>
 
     <p>
       {{ $t('description') }}
@@ -153,14 +153,14 @@ pt:
 
   /* Add this to your existing CSS */
   .header.full-width {
-    width: 100vw;
+    width: 100%;
     max-width: 100vw;
     position: relative;
   }
 
   .header.full-width img {
     width: auto;
-    max-width: 100%;
+    max-width: 100vw;
     max-height: 100vh;
     height: auto;
     object-fit: cover;
