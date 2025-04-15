@@ -75,7 +75,7 @@
 <i18n lang="yaml">
 en:
   title: Silverto Spring Party 2025
-  description: We're thrilled to announce our annual Spring Party, taking place on Friday, May 3rd, 2025, from the afternoon at 14:00 pm into the evening and through the next morning at Silverto.
+  description: We're thrilled to announce our annual Spring Party, taking place on Saturday, May 3rd, 2025, from the afternoon at 14:00 pm into the evening and through the next morning at Silverto.
   cta:
     primary: Join our Telegram Group
     secondary: RSVP in our Party Document
@@ -105,7 +105,7 @@ en:
 
 pt:
   title: Festa da Primavera Silverto 2025
-  description: Temos o prazer de anunciar a nossa Festa da Primavera anual, que terá lugar na sexta-feira, 3 de maio de 2025, desde a tarde às 14:00 até à noite e durante a manhã seguinte em Silverto.
+  description: Temos o prazer de anunciar a nossa Festa da Primavera anual, num sabado, dia 3 de maio de 2025, desde a tarde às 14:00 até à noite e durante a manhã seguinte em Silverto.
   cta:
     primary: Junte-se ao nosso Grupo Telegram
     secondary: Confirme Presença no Documento da Festa
