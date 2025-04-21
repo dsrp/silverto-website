@@ -1,21 +1,23 @@
 <template>
   <div class="fofo">
     <!-- Full-width header with black background for poster -->
-    <div class="header full-width">
-      <img
-        :alt="$t('title')"
-        src="@/assets/img/fofo/fofo.png"
-        srcset="@/assets/img/fofo/fofo@0.25x.png 960w,
-                @/assets/img/fofo/fofo@0.75x.png 2880w,
-                @/assets/img/fofo/fofo@0.5x.png 1920w,
-                @/assets/img/fofo/fofo.png 3840w"
-        sizes="(max-width: 960px) auto,
-               (max-width: 1920px) auto,
-               (max-width: 2880px) 2880w,
-               3840px"
-        class="responsive-image"
-      >
-    </div>
+    <a href="#fofo-title">
+      <div class="header full-width">
+          <img
+            :alt="$t('title')"
+            src="@/assets/img/fofo/fofo.png"
+            srcset="@/assets/img/fofo/fofo@0.25x.png 960w,
+                    @/assets/img/fofo/fofo@0.75x.png 2880w,
+                    @/assets/img/fofo/fofo@0.5x.png 1920w,
+                    @/assets/img/fofo/fofo.png 3840w"
+            sizes="(max-width: 960px) auto,
+                   (max-width: 1920px) auto,
+                   (max-width: 2880px) 2880w,
+                   3840px"
+            class="responsive-image"
+          >
+      </div>
+    </a>
 
     <!-- Content container -->
     <div class="content-container">
@@ -106,7 +108,7 @@ en:
   dateLocation: "July 1-31, 2025 · Silverto, Northern Portugal"
   intro: "Forest Focus brings together remote workers, creators, and dreamers in the lush forests of Ecoaldeia Silverto. This is not a product, but a canvas for community connection where nature meets productivity, mindfulness, and inspiration."
 
-  tagline: "Nature · Beauty · Calm · Inspiration · Good Food · Blazingly Fast Wifi"
+  tagline: "Nature · Beauty · Calm · Inspiration · Good Food · Fast Wifi"
 
   experience:
     title: "The Experience"
