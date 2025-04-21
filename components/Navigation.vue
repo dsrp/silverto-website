@@ -13,10 +13,10 @@
       <nuxt-link :to="localePath('/primavera')">
         {{ $t('primavera') }}
       </nuxt-link> |
-      <nuxt-link :to="localePath('/fofo')">
+<!--       <nuxt-link :to="localePath('/fofo')">
         {{ $t('fofo') }}
       </nuxt-link> |
-      <nuxt-link :to="localePath('/subscribe')">
+ -->      <nuxt-link :to="localePath('/subscribe')">
         {{ $t('subscribe') }}
       </nuxt-link>
     </nav>
