@@ -13,6 +13,9 @@
       <nuxt-link :to="localePath('/primavera')">
         {{ $t('primavera') }}
       </nuxt-link> |
+      <nuxt-link :to="localePath('/fofo')">
+        {{ $t('fofo') }}
+      </nuxt-link> |
       <nuxt-link :to="localePath('/subscribe')">
         {{ $t('subscribe') }}
       </nuxt-link>
@@ -41,11 +44,13 @@ en:
   about: About
   volunteering: Volunteering
   primavera: Spring
+  fofo: Forest Focus
   subscribe: Subscribe
 pt:
   about: Sobre nos
   volunteering: Voluntariado
   primavera: Primavera
+  fofo: Forest Focus
   subscribe: Inscrever
 </i18n>
 
