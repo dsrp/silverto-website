@@ -9,8 +9,8 @@
                 @/assets/img/fofo/fofo@0.75x.png 2880w,
                 @/assets/img/fofo/fofo@0.5x.png 1920w,
                 @/assets/img/fofo/fofo.png 3840w"
-        sizes="(max-width: 960px) 960px,
-               (max-width: 1920px) 1920px,
+        sizes="(max-width: 960px) auto,
+               (max-width: 1920px) auto,
                (max-width: 2880px) 2880w,
                3840px"
         class="responsive-image"
