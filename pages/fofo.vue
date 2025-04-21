@@ -1,20 +1,20 @@
 <template>
   <div class="fofo">
-    <a class="header full-width" href="#fofo-title">
+    <div class="header full-width">
       <img
         :alt="$t('title')"
-        src="@/assets/img/fofo/silverto-1.jpg"
-        srcset="@/assets/img/fofo/silverto-3@0.25x.jpg 960w,
-                @/assets/img/fofo/silverto@0.75x.jpg 2880w,
-                @/assets/img/fofo/silverto-2@0.5x.jpg 1920w,
-                @/assets/img/fofo/silverto-1.jpg 3840w"
+        src="@/assets/img/fofo/fofo.png"
+        srcset="@/assets/img/fofo/fofo@0.25x.png 960w,
+                @/assets/img/fofo/fofo@0.75x.png 2880w,
+                @/assets/img/fofo/fofo@0.5x.png 1920w,
+                @/assets/img/fofo/fofo.png 3840w"
         sizes="(max-width: 960px) 960px,
                (max-width: 1920px) 1920px,
                (max-width: 2880px) 2880w,
                3840px"
         class="responsive-image"
       >
-    </a>
+    </div>
 
     <h1 id="fofo-title">{{ $t('title') }}</h1>
     <h2 class="subtitle">{{ $t('subtitle') }}</h2>
@@ -242,19 +242,25 @@ pt:
     }
   }
 
-  /* Header and image styles */
+  /* Header and image styles for portrait flyer with black bars */
   .header.full-width {
     width: 100%;
     max-width: 100vw;
     position: relative;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
 
   .header.full-width img {
     width: auto;
-    max-width: 100vw;
+    max-width: 70vh; /* Control width of flyer image */
     max-height: 100vh;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
   }
 
   .responsive-image {
