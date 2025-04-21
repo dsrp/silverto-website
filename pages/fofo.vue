@@ -1,5 +1,6 @@
 <template>
   <div class="fofo">
+    <!-- Full-width header with black background for poster -->
     <div class="header full-width">
       <img
         :alt="$t('title')"
@@ -16,75 +17,78 @@
       >
     </div>
 
-    <h1 id="fofo-title">{{ $t('title') }}</h1>
-    <h2 class="subtitle">{{ $t('subtitle') }}</h2>
-    <p class="date-location">{{ $t('dateLocation') }}</p>
+    <!-- Content container -->
+    <div class="content-container">
+      <h1 id="fofo-title">{{ $t('title') }}</h1>
+      <h2 class="subtitle">{{ $t('subtitle') }}</h2>
+      <p class="date-location">{{ $t('dateLocation') }}</p>
 
-    <p class="intro">{{ $t('intro') }}</p>
+      <p class="intro">{{ $t('intro') }}</p>
 
-    <div class="tagline">{{ $t('tagline') }}</div>
+      <div class="tagline">{{ $t('tagline') }}</div>
 
-    <!-- The Experience -->
-    <section class="section-block">
-      <h3>{{ $t('experience.title') }}</h3>
-      <p>{{ $t('experience.intro') }}</p>
-      <ul class="feature-list">
-        <li v-for="(item, index) in $t('experience.items')" :key="index">
-          <strong>{{ item.title }}:</strong> {{ item.description }}
-        </li>
-      </ul>
-    </section>
+      <!-- The Experience -->
+      <section class="section-block">
+        <h3>{{ $t('experience.title') }}</h3>
+        <p>{{ $t('experience.intro') }}</p>
+        <ul class="feature-list">
+          <li v-for="(item, index) in $t('experience.items')" :key="index">
+            <strong>{{ item.title }}:</strong> {{ item.description }}
+          </li>
+        </ul>
+      </section>
 
-    <!-- How It Works -->
-    <section class="section-block">
-      <h3>{{ $t('howItWorks.title') }}</h3>
-      <p>{{ $t('howItWorks.intro') }}</p>
-      <ul>
-        <li v-for="(item, index) in $t('howItWorks.items')" :key="index">
-          {{ item }}
-        </li>
-      </ul>
-      <p>{{ $t('howItWorks.outro') }}</p>
-    </section>
+      <!-- How It Works -->
+      <section class="section-block">
+        <h3>{{ $t('howItWorks.title') }}</h3>
+        <p>{{ $t('howItWorks.intro') }}</p>
+        <ul>
+          <li v-for="(item, index) in $t('howItWorks.items')" :key="index">
+            {{ item }}
+          </li>
+        </ul>
+        <p>{{ $t('howItWorks.outro') }}</p>
+      </section>
 
-    <!-- Activities -->
-    <section class="section-block">
-      <h3>{{ $t('activities.title') }}</h3>
-      <p>{{ $t('activities.intro') }}</p>
-      <ul>
-        <li v-for="(item, index) in $t('activities.items')" :key="index">
-          {{ item }}
-        </li>
-      </ul>
-    </section>
+      <!-- Activities -->
+      <section class="section-block">
+        <h3>{{ $t('activities.title') }}</h3>
+        <p>{{ $t('activities.intro') }}</p>
+        <ul>
+          <li v-for="(item, index) in $t('activities.items')" :key="index">
+            {{ item }}
+          </li>
+        </ul>
+      </section>
 
-    <!-- Who's Welcome -->
-    <section class="section-block">
-      <h3>{{ $t('whoWelcome.title') }}</h3>
-      <p>{{ $t('whoWelcome.intro') }}</p>
-      <ul>
-        <li v-for="(item, index) in $t('whoWelcome.items')" :key="index">
-          {{ item }}
-        </li>
-      </ul>
-    </section>
+      <!-- Who's Welcome -->
+      <section class="section-block">
+        <h3>{{ $t('whoWelcome.title') }}</h3>
+        <p>{{ $t('whoWelcome.intro') }}</p>
+        <ul>
+          <li v-for="(item, index) in $t('whoWelcome.items')" :key="index">
+            {{ item }}
+          </li>
+        </ul>
+      </section>
 
-    <!-- Availability Notice -->
-    <section class="availability-notice">
-      <h3>{{ $t('availability.title') }}</h3>
-      <p>{{ $t('availability.text') }}</p>
-    </section>
+      <!-- Availability Notice -->
+      <section class="availability-notice">
+        <h3>{{ $t('availability.title') }}</h3>
+        <p>{{ $t('availability.text') }}</p>
+      </section>
 
-    <!-- Primary CTA - Telegram -->
-    <div class="cta-primary">
-      <a href="https://t.me/silverto_forest_focus" class="btn btn-primary">
-        <span class="icon">💬</span>
-        {{ $t('cta.primary') }}
-      </a>
+      <!-- Primary CTA - Telegram -->
+      <div class="cta-primary">
+        <a href="https://t.me/silverto_forest_focus" class="btn btn-primary">
+          <span class="icon">💬</span>
+          {{ $t('cta.primary') }}
+        </a>
+      </div>
+
+      <p class="closing">{{ $t('closing') }}</p>
+      <p class="motto"><em>{{ $t('motto') }}</em></p>
     </div>
-
-    <p class="closing">{{ $t('closing') }}</p>
-    <p class="motto"><em>{{ $t('motto') }}</em></p>
 
     <!-- Floating CTA Button (Mobile) -->
     <div class="floating-cta">
@@ -231,42 +235,60 @@ pt:
   flex-flow: column;
   align-items: center;
   position: relative;
-  padding: 1em;
-  padding-top: 0;
-
-  > * {
-    max-width: 80vw;
-
-    @media only screen and (min-width: 500px) {
-      max-width: 40em;
-    }
-  }
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 
   /* Header and image styles for portrait flyer with black bars */
   .header.full-width {
-    width: 100%;
-    max-width: 100vw;
+    width: 100vw;
     position: relative;
     background-color: #000;
     display: flex;
     justify-content: center;
-    padding: 0;
+    align-items: center;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 2rem;
+    height: 100vh; /* Make the header exactly full viewport height */
+    overflow: hidden; /* Hide any overflow */
+    line-height: 0; /* Remove any extra spacing */
   }
 
   .header.full-width img {
     width: auto;
-    max-width: 70vh; /* Control width of flyer image */
-    max-height: 100vh;
-    height: auto;
+    max-height: 100%;
     object-fit: contain;
-    display: block;
     margin: 0 auto;
+    vertical-align: middle; /* Removes bottom gap */
+    display: block;
   }
 
+  /* Responsive image behavior */
   .responsive-image {
     max-width: 100%;
     height: auto;
     display: block;
+    font-size: 0; /* Remove any font-related spaces */
+  }
+
+  /* Reset content flow */
+  .content-container {
+    width: 90%;
+    max-width: 40em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  /* Ensure the main element has proper stacking */
+  :global(.main) {
+    display: block !important;
+    padding: 0;
+    margin: 0;
   }
 
   /* Typography */
@@ -303,7 +325,7 @@ pt:
     font-size: 1.4rem;
     text-align: center;
     margin: 1rem 0 2rem;
-    padding: 1rem;
+    padding: 1rem 0;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     width: 100%;
@@ -314,6 +336,7 @@ pt:
   .section-block {
     margin-bottom: 2.5rem;
     width: 100%;
+    text-align: left;
   }
 
   h3 {
