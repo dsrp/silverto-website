@@ -10,8 +10,12 @@
 
     <h3>{{ $t('partners') }}</h3>
     <ul class="inline">
-      <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a></li>
-      <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project" src="@/assets/img/logos/dsrp-logo.png"></a></li>
+      <li><a href="https://movingcause.org/"><img alt="Moving Cause" src="@/assets/img/logos/movingcause-logo.png"></a>
+      </li>
+      <li><a href="https://reflorestar-portugal.com"><img alt="Reflorestar Portugal"
+            src="@/assets/img/logos/reflorestar-logo.png"></a></li>
+      <li><a href="https://dsrp.eu"><img alt="Decentralised Society Research Project"
+            src="@/assets/img/logos/dsrp-logo.png"></a></li>
     </ul>
 
     <h3>{{ $t('talktous') }}</h3>
@@ -60,7 +64,7 @@ pt:
   flex-flow: column;
   align-items: center;
 
-  > * {
+  >* {
     max-width: 80vw;
 
     @media only screen and (min-width: 500px) {
@@ -70,7 +74,8 @@ pt:
 
   padding: 1em;
 
-  address, p {
+  address,
+  p {
     text-align: left;
   }
 
@@ -81,11 +86,11 @@ pt:
 
     list-style-type: none;
 
-    > li {
+    >li {
       display: inline;
       padding: 10pt;
 
-      > h4 {
+      >h4 {
         display: inline;
       }
 
