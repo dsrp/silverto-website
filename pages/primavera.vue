@@ -66,7 +66,7 @@
 
 <i18n lang="yaml">
 en:
-  title: Silverto Spring Party 2025
+  title: Silverto Spring Party 2026
   description: We're thrilled to announce our annual Spring Party, taking place on Saturday, May 3rd, 2025, from the afternoon at 14:00 pm into the evening and through the next morning at Silverto.
   cta:
     primary: Join our Telegram Group
