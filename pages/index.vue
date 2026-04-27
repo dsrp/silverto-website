@@ -38,7 +38,7 @@
 <i18n lang="yaml">
 en:
   title: Ecoaldeia Silverto
-  description: Regenerative agroforestry in North Portugal.
+  description: Regenerative agroforestry in Northern Portugal.
   learnmore: Learn More
   volunteer: Volunteer
 
