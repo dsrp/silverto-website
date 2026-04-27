@@ -3,7 +3,15 @@
     <a class="header full-width" href="#party-explainer">
       <img
         :alt="$t('title')"
-        src="@/assets/img/primavera/festa-poster-cats.png"
+        src="@/assets/img/primavera/festa-poster-cats-1.jpg"
+        srcset="@/assets/img/primavera/festa-poster-cats-3@0.25x.jpg 1020w,
+                @/assets/img/primavera/festa-poster-cats-2@0.5x.jpg 2040w,
+                @/assets/img/primavera/festa-poster-cats@0.75x.jpg 3060w,
+                @/assets/img/primavera/festa-poster-cats-1.jpg 4080w"
+        sizes="(max-width: 1020px) 1020px,
+               (max-width: 2040px) 2040px,
+               (max-width: 3060px) 3060w,
+               4080px"
         class="responsive-image"
       >
     </a>
