@@ -96,7 +96,7 @@ en:
   closing: We look forward to celebrating spring, our region Minho, and new beginnings with you at Silverto!
 
 pt:
-  title: Festa da Primavera Silverto 2025
+  title: Festa da Primavera Silverto 2026
   description: Temos o prazer de anunciar a nossa Festa da Primavera anual, num sabado, dia 3 de maio de 2025, desde a tarde às 14:00 até à noite e durante a manhã seguinte em Silverto.
   cta:
     primary: Junte-se ao nosso Grupo Telegram
