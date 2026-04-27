@@ -1,29 +1,12 @@
 <template>
   <div class="about">
     <h1>{{ $t('title') }}</h1>
-    <h2>{{ $t('cooperative') }}</h2>
-    <h3>{{ $t('subtitle') }}</h3>
-    <p>{{ $t('synopsis') }}</p>
-    <h3>{{ $t('evolution.title') }}</h3>
-    <p>{{ $t('evolution.text') }}</p>
-    <h3>{{ $t('location.title') }}</h3>
-    <iframe
-      width="425"
-      height="350"
-      frameborder="0"
-      scrolling="no"
-      marginheight="0"
-      marginwidth="0"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-9.354858398437502%2C41.47360232634395%2C-7.871704101562501%2C42.32301644617188&amp;layer=mapnik&amp;marker=41.899721690058364%2C-8.61328125"
-      style="border: 1px solid black"
-    /><br><small><a href="https://www.openstreetmap.org/?mlat=41.8997&amp;mlon=-8.6133#map=10/41.8997/-8.6133">{{ $t('location.viewlargermap') }}</a></small>
-    <h3>{{ $t('location.address') }}</h3>
-    <address>
-      Caminho de Moreira nº240<br>
-      Lugar do Silverto<br>
-      4940-692 Rubiães, Paredes de Coura<br>
-      Portugal
-    </address>
+    <h2>{{ $t('subtitle') }}</h2>
+    <p>{{ $t('intro') }}</p>
+    <h3>{{ $t('building.title') }}</h3>
+    <p>{{ $t('building.text') }}</p>
+    <h3>{{ $t('howwework.title') }}</h3>
+    <p>{{ $t('howwework.text') }}</p>
 
     <h3>{{ $t('partners') }}</h3>
     <ul class="inline">
@@ -43,36 +26,32 @@
 
 <i18n lang="yaml">
 en:
-  title: About us
-  cooperative: Ecoaldeia Silverto
-  subtitle: A fusion of rural co-housing and regenerative agroforestry
-  synopsis: Living close to nature with a spirit of modesty and curiosity. Developing a sense of community around to learn and grow together. Helping the land to regenerate by practising more sustainable agriculture and agroforestry, appreciating the unique qualities of the landscape.
-  evolution:
-    title: Evolution
-    text: We have acquired a forest property of 1.5 hectares, part of which is construction land. In 2019, we started renovating the existing country house, which will function as a communal space (co-working, kitchen, guest room). In addition, we have started managing the woodland, taking care of its diversity to turn it into a food forest in the future. We aim to create a small community that cares for the land and each other. Together, we would like to build comfortable and affordable houses with low environmental impact.
-  location:
-    title: Location
-    viewlargermap: View larger map
-    address: Address
+  title: Silverto
+  subtitle: A fusion of regenerative agroforestry and quiet living
+  intro: Silverto is 1.5 hectares of land near Paredes de Coura, in the green hills of northern Portugal. Part forest, part food forest in the making, part home — it is a place being shaped with intention, patience, and a deep respect for the landscape that holds it.
+  building:
+    title: What we are building
+    text: The stone house at the centre of Silverto is partly renovated and lived in. The land around it is being managed as a food forest — trees establishing, soil improving, diversity returning. This is not a finished project, and that is precisely the point. We are learning, adjusting, and building something that is meant to last. Beyond the immediate land, Silverto sits within a wider fabric of neighbours and initiatives across northern Portugal who share a similar outlook — people looking for a different relationship with land, with work, and with one another.
+  howwework:
+    title: How we work
+    text: We practise regenerative agroforestry — working with natural systems rather than against them, increasing the diversity and resilience of the land over time. We welcome guests and volunteers who want to learn alongside us, contribute meaningfully, and experience what it feels like to live at the edge of a forest. If you are curious, self-directed, and drawn to this way of living, Silverto may be the right place to spend some time.
   partners: Partners
   talktous: Talk to us
   happytotalk: We are happy to meet you! Send us an email or join our chat to start the conversation!
 
 pt:
-  title: Sobre nos
-  cooperative: Ecoaldeia Silverto
-  subtitle: Combina co-habitação rural com agroflorestação regenerativa.
-  synopsis: Viver próximo da natureza com um espírito de modéstia e curiosidade. Desenvolver um sentido de comunidade para aprender e crescer em conjunto. Ajudar a terra a regenerar-se, praticando uma agricultura e uma silvicultura mais sustentáveis, apreciando as qualidades únicas da paisagem.
-  evolution:
-    title: Evolução
-    text: Adquirimos uma propriedade florestal de 1,5 hectares, parte da qual é terreno de construção. Em 2019, começámos a renovar a casa de campo existente, que funcionará como um espaço comum (co-working, cozinha, quarto de hóspedes). Além disso, começámos a gerir a floresta, cuidando da sua diversidade para a transformar, no futuro, numa floresta alimentar. Queremos criar uma pequena comunidade que cuide da terra e uns dos outros. Juntos, gostaríamos de construir casas confortáveis e económicas com baixo impacto ambiental.
-  location:
-    title: Onde estamos
-    viewlargermap: Visualizar Mapa em Tamanho Maior
-    address: Morada
+  title: Silverto
+  subtitle: Uma fusão de agroflorestação regenerativa e vida tranquila
+  intro: Silverto são 1,5 hectares de terra perto de Paredes de Coura, nas colinas verdes do norte de Portugal. Parte floresta, parte floresta alimentar em construção, parte lar — é um lugar que está a ser moldado com intenção, paciência e um profundo respeito pela paisagem que o sustenta.
+  building:
+    title: O que estamos a construir
+    text: A casa de pedra no centro de Silverto está parcialmente renovada e habitada. A terra em redor está a ser gerida como uma floresta alimentar — árvores a estabelecer-se, solo a melhorar, diversidade a regressar. Este não é um projeto acabado, e é precisamente esse o ponto. Estamos a aprender, a ajustar e a construir algo que se pretende duradouro. Para além da terra imediata, Silverto insere-se numa tapeçaria mais ampla de vizinhos e iniciativas no norte de Portugal que partilham uma visão semelhante — pessoas que procuram uma relação diferente com a terra, com o trabalho e entre si.
+  howwework:
+    title: Como trabalhamos
+    text: Praticamos agroflorestação regenerativa — trabalhando com os sistemas naturais em vez de contra eles, aumentando a diversidade e resiliência da terra ao longo do tempo. Recebemos hóspedes e voluntários que querem aprender connosco, contribuir de forma significativa e experienciar o que é viver na orla de uma floresta. Se és curioso, autónomo e atraído por esta forma de viver, Silverto pode ser o lugar certo para passar algum tempo.
   partners: Parceiros
-  talktous: Fale conosco
-  happytotalk: Estamos felizes de te-encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
+  talktous: Fale connosco
+  happytotalk: Estamos felizes de te encontrar! Mande-nos um e-mail ou junte-se ao nosso chat para iniciar a conversa!
 </i18n>
 
 <style lang="scss" scoped>

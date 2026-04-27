@@ -25,9 +25,9 @@
             {{ $t('learnmore') }}
           </button>
         </nuxt-link>
-        <nuxt-link :to="localePath('subscribe')">
+        <nuxt-link :to="localePath('volunteering')">
           <button class="primary-button">
-            {{ $t('subscribeme') }}
+            {{ $t('volunteer') }}
           </button>
         </nuxt-link>
       </div>
@@ -38,14 +38,15 @@
 <i18n lang="yaml">
 en:
   title: Ecoaldeia Silverto
-  description: Nurturing a community rooted in the forest | Northern Portugal.
-  learnmore: Learn more
-  subscribeme: Subscribe me
+  description: Regenerative agroforestry in North Portugal.
+  learnmore: Learn More
+  volunteer: Volunteer
 
 pt:
-  description: Nutrir uma comunidade enraizada na floresta | Norte de Portugal
+  title: Ecoaldeia Silverto
+  description: Agroflorestação regenerativa no Norte de Portugal.
   learnmore: Conhecer mais
-  subscribeme: Inscrever-me
+  volunteer: Voluntariado
 </i18n>
 
 <script>

@@ -2,16 +2,8 @@
   <div class="primavera">
     <a class="header full-width" href="#party-explainer">
       <img
-        :alt="$t('description')"
-        src="@/assets/img/primavera/silverto-1.jpg"
-        srcset="@/assets/img/primavera/silverto-3@0.25x.jpg 960w,
-                @/assets/img/primavera/silverto@0.75x.jpg 2880w,
-                @/assets/img/primavera/silverto-2@0.5x.jpg 1920w,
-                @/assets/img/primavera/silverto-1.jpg 3840w"
-        sizes="(max-width: 960px) 960px,
-               (max-width: 1920px) 1920px,
-               (max-width: 2880px) 2880w,
-               3840px"
+        :alt="$t('title')"
+        src="@/assets/img/primavera/festa-poster-cats.png"
         class="responsive-image"
       >
     </a>
